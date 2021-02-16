@@ -48,12 +48,7 @@ class options_func(APIView):
 
 
 def home(request):
-    template = loader.get_template(os.path.join(BASE_DIR, 'Alt_Career', 'templates', 'jinja2', 'homepage.html'))
-    context = {
-        'latest_question_list': '',
-    }
-    # return render(request,'jinja2/homepage.html')
-    return HttpResponse(template.render(context))
+    return render(request, 'homepage.html')
 
 
 def result(request):
@@ -171,5 +166,6 @@ def result(request):
         senkey = json.dumps(final)
         table = json.dumps(ready)
         '''
-        template = loader.get_template('jinja2/results.html')
-        return HttpResponse(template.render({'sen': final, 'sen_tab': itertools.zip_longest(final, ready, range(0, len(final)))}))
+        # template = loader.get_template('jinja2/results.html')
+        # return HttpResponse(template.render({'sen': final, 'sen_tab': itertools.zip_longest(final, ready, range(0, len(final)))}))
+        return render(request, 'results.html', {'sen': final, 'sen_tab': itertools.zip_longest(final, ready, range(0, len(final)))})

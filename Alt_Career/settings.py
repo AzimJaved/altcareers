@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Alt_Career'
+    'Alt_Career',
+    'json_tag'
 ]
 
 MIDDLEWARE = [
