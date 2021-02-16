@@ -1,0 +1,560 @@
+Role Category,Role,Functional Area,Industry,Skill1,Skill2,Skill3,Skill4,Skill5
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Security, Law Enforcement",Tally,Service Industry,Payroll,Filing,Tds
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Security, Law Enforcement",Esi,Pf,Returns,Invoice,Coaching
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Recruitment, Staffing",Book Keeping,Vat,Management Accounting,Accounting,Sage
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","It-Software, Software Services",Data Mining,Business Objects,Erp,Testing,Managed Services
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","It-Software, Software Services",Oracle Project Accounting,Analyst,Business Process Mapping,Executive Management,Change Management
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Architecture, Interior Design",Bank Reconciliation,Monthly Reports,Tax Audit,Taxation,Stock Management
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Architecture, Interior Design",Income Tax Return,Accounting,Gst,Auditing,Banking
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Architecture, Interior Design",Salary Processing,Accounts Executive,Account Assistant,Payroll,Statutory Compliance
+Accounts,Accounts Manager,"Accounts , Finance , Tax , Company Secretary , Audit",Iron And Steel,Finance,Financial Reporting,Statutory Compliance,Accounting,Gst
+Accounts,Accounts Manager,"Accounts , Finance , Tax , Company Secretary , Audit","It-Software, Software Services",Service Tax,Taxation,Tax Audit,Finance,Bank Reconciliation
+Accounts,Accounts Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Due Diligence,Banking,Accounting,Financial Reporting,Data Analysis
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Subject Matter Expert,Analytical,Reconciliation,Standard Operating Procedures,Corporate Actions
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Nav Calculation,Automation,Accounting,Fund Accounting,Process Improvement
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Accounting, Finance",Communication Skills,Order Management,O2C,Otc,Credit Management
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Recruitment, Staffing",Analytical,Recruitment,Business Opportunity,Tds,Accounts Receivable
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Recruitment, Staffing",Accounting,Interpersonal Skills,Invoice Processing,Financial Statements,Tally Erp
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Internet, Ecommerce",Risk Management,Finance,Internal Audit,Accounting,Credit Officers
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Business Development Executive,Sales,New Business,Banker,Business Development
+Accounts,Accounts Executive/Accountant,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Sales Officer,Senior Business Analyst,Private Banker,Business Development Manager,Sales Manager
+Admin/Maintenance/Security/Datawarehousing,System Security,"It Software - Application Programming , Maintenance","Accounting, Finance",Javascript,Db2,Networking,Ejb,Linux
+Admin/Maintenance/Security/Datawarehousing,System Security,"It Software - Application Programming , Maintenance","Accounting, Finance",Windows,Application Support,Jdbc,Ms Sql,Xml
+Admin/Maintenance/Security/Datawarehousing,System Administrator,"It Software - Application Programming , Maintenance","It-Software, Software Services",Linux Administration,Redhat Linux,Rhce,Linux System Admin,Rhel
+Admin/Maintenance/Security/Datawarehousing,System Administrator,"It Software - Application Programming , Maintenance","Internet, Ecommerce",Application Software,Operating Systems,System Management,Cloud,Testing
+Admin/Maintenance/Security/Datawarehousing,System Administrator,"It Software - Application Programming , Maintenance","It-Software, Software Services",Office Administration,Interpersonal Skills,Receptionist Activities,Management Skills,Front Desk
+Admin/Maintenance/Security/Datawarehousing,Network Administrator,"It Software - Network Administration , Security","It-Software, Software Services",Technical Support,Nas,Disaster Recovery,Storage Management,Brocade
+Admin/Maintenance/Security/Datawarehousing,Network Administrator,"It Software - Network Administration , Security","It-Software, Software Services",Product Support,Celerra,Clariion,Emc San,Emc Vnx
+Admin/Maintenance/Security/Datawarehousing,System Administrator,"It Software - Application Programming , Maintenance","Banking, Financial Services, Broking",Operations,Investment Banking,Access Management,Process Improvement,Windows
+Admin/Maintenance/Security/Datawarehousing,System Administrator,"It Software - Application Programming , Maintenance","Banking, Financial Services, Broking",Sybase,Monitoring,Active Directory,Auditing,Unix
+Admin/Maintenance/Security/Datawarehousing,Network Administrator,"It Software - Network Administration , Security","It-Software, Software Services",Cyberoam,Dns,System Administration,Networking,Active Directory
+Admin/Maintenance/Security/Datawarehousing,Network Administrator,"It Software - Network Administration , Security","It-Software, Software Services",Dhcp,Executive Search,System Engineering,File Server,Wsus Server
+Admin/Maintenance/Security/Datawarehousing,System Administrator,"It Software - Application Programming , Maintenance","It-Software, Software Services",Dns,Testing,Coding,Business Executive,Dhcp
+Admin/Maintenance/Security/Datawarehousing,System Administrator,"It Software - Application Programming , Maintenance","It-Software, Software Services",Who,Linux Administrator,Networking Protocols,Device Drivers,C
+Admin/Maintenance/Security/Datawarehousing,System Administrator,"It Software - Network Administration , Security","It-Software, Software Services",Language Skills,Testing,Hp-Ux,English Language,Infrastructure Services
+Admin/Maintenance/Security/Datawarehousing,System Administrator,"It Software - Network Administration , Security","It-Software, Software Services",Hp Servers,Aix,Application,Debugging,Manager Technology
+Admin/Maintenance/Security/Datawarehousing,Network Administrator,"It Software - Network Administration , Security","It-Software, Software Services",Hardware Networking,Telephony,Wap,Management Supervisor,Network Management
+Admin/Maintenance/Security/Datawarehousing,Technical Support Engineer,"It Software - Application Programming , Maintenance","It-Software, Software Services",It Infrastructure,Network Infrastructure,Network Engineer,Server Support,Technical Support Executive
+Admin/Maintenance/Security/Datawarehousing,Dba,"It Software - Erp , Crm","It-Software, Software Services",Business Process,Performance Testing,Data Migration,Business Objects,Data Services
+Admin/Maintenance/Security/Datawarehousing,System Administrator,"It Software - Systems , Edp , Mis","It-Software, Software Services",Javascript,Sql,Oracle,Html,Python
+Admin/Maintenance/Security/Datawarehousing,System Security,"It Software - Network Administration , Security","Banking, Financial Services, Broking",Access Management,Information Technology,Hrm,Pci Dss,Risk Management
+Admin/Maintenance/Security/Datawarehousing,System Security,"It Software - Network Administration , Security","Banking, Financial Services, Broking",Pdf,Auditing,Management,Computer Science,Information Security
+Admin/Maintenance/Security/Datawarehousing,Dba,"It Software - Dba , Datawarehousing","It-Software, Software Services",Sql,Oracle Apps,Database Administration,Performance Tuning,Monitoring
+Admin/Maintenance/Security/Datawarehousing,Dba,"It Software - Dba , Datawarehousing","It-Software, Software Services",Archiving,Troubleshooting,Mysql,Rman,Open Source
+Admin/Maintenance/Security/Datawarehousing,System Security,"It Software - Network Administration , Security","It-Software, Software Services",Siem,Splunk,System Administration,Network Security,Monitoring
+Admin/Maintenance/Security/Datawarehousing,System Security,"It Software - Network Administration , Security","It-Software, Software Services",Event Management,Consulting,Outsourcing,Capacity Management,Information Security
+Admin/Maintenance/Security/Datawarehousing,Dba,"It Software - Dba , Datawarehousing","It-Software, Software Services",Oracle Apps,Oracle Database,Apps Dba,Oracle E-Business Suite,Ticketing
+Admin/Maintenance/Security/Datawarehousing,Network Administrator,"It Software - Network Administration , Security",It-Hardware & Networking,System Admin,Networking,Network Engineering,Network Administrator,Negotiation Skills
+Admin/Maintenance/Security/Datawarehousing,System Security,It Software - Other,"Banking, Financial Services, Broking",Application Software,Workflow,Coding,Information Technology,Test Planning
+Admin/Maintenance/Security/Datawarehousing,System Security,It Software - Other,"Banking, Financial Services, Broking",Financial Services,Software Development Life Cycle,Technology Solutions,Technical Support,Computer Science
+Admin/Maintenance/Security/Datawarehousing,Dba,"It Software - Application Programming , Maintenance","It-Software, Software Services",Oracle Rdbms,Apache Tomcat,Weblogic,Linux,Disaster Recovery
+Admin/Maintenance/Security/Datawarehousing,Technical Support Engineer,"It Software - Application Programming , Maintenance","It-Software, Software Services",Technical Support,Core Java,Application Support,Linux,Application Server
+Admin/Maintenance/Security/Datawarehousing,Technical Support Engineer,"It Software - Application Programming , Maintenance","It-Software, Software Services",Night Shift,Release Management,Aws,Team Management Skills,Mysql
+Admin/Maintenance/Security/Datawarehousing,Network Administrator,"It Software - Network Administration , Security","It-Software, Software Services",Capacity Management,Business Continuity,Storage Management,Configuration Management,Raid
+Admin/Maintenance/Security/Datawarehousing,System Administrator,It Software - Other,"It-Software, Software Services",Procurement,Negotiation,Cv,Business Executive,Windows
+Admin/Maintenance/Security/Datawarehousing,Webmaster,"It Software - Ecommerce , Internet Technologies","It-Software, Software Services",Content Writing,Networking,Marketing,Corporate,Email Marketing
+Admin/Maintenance/Security/Datawarehousing,Dba,"It Software - Dba , Datawarehousing","It-Software, Software Services",Sdlc,Agile,Database Administration,Performance Tuning,Windows
+Admin/Maintenance/Security/Datawarehousing,Dba,"It Software - Dba , Datawarehousing","It-Software, Software Services",Oracle,Monitoring,Troubleshooting,Ms Sql,Postgresql
+Admin/Maintenance/Security/Datawarehousing,Technical Support Engineer,"It Software - Application Programming , Maintenance","It-Software, Software Services",Bash,Linux,Puppet,Open Source,Python
+Admin/Maintenance/Security/Datawarehousing,Technical Support Engineer,"It Software - Application Programming , Maintenance","It-Software, Software Services",Ruby,Redis,Aws,Mysql,Php
+Admin/Maintenance/Security/Datawarehousing,Network Administrator,"It Software - Network Administration , Security","It-Software, Software Services",Project Management,Virtualization,Cisco,Ospf,Troubleshooting
+Admin/Maintenance/Security/Datawarehousing,Network Administrator,"It Software - Network Administration , Security","It-Software, Software Services",Change Management,Ccna,Wan,Debugging,Mpls
+Admin/Maintenance/Security/Datawarehousing,Technical Support Engineer,"It Software - Application Programming , Maintenance","It-Software, Software Services",Networking,Verbal Communication,Network Management,System Administration,Technical Support
+Admin/Maintenance/Security/Datawarehousing,Technical Support Engineer,"It Software - Application Programming , Maintenance","It-Software, Software Services",Product Support,Monitoring Tools,Management Systems,Customer Focus,Application Monitoring
+Admin/Maintenance/Security/Datawarehousing,Technical Support Engineer,"It Software - Application Programming , Maintenance","Recruitment, Staffing",Mcafee,Troubleshooting,Printing,Rs232,Ieee
+Admin/Maintenance/Security/Datawarehousing,Technical Support Engineer,"It Software - Application Programming , Maintenance","Recruitment, Staffing",System Software,Sms,Windows Xp,Pharmaceutical,Customer Service
+Admin/Maintenance/Security/Datawarehousing,Technical Support Engineer,"It Software - Application Programming , Maintenance","Recruitment, Staffing",Sql,Helpdesk,Customer Service,Linux,Cisco
+Admin/Maintenance/Security/Datawarehousing,Technical Support Engineer,"It Software - Application Programming , Maintenance","Recruitment, Staffing",Windows,Customer Support,Solaris,Technical Support,Project Management
+Admin/Maintenance/Security/Datawarehousing,System Security,"It Software - Application Programming , Maintenance","Internet, Ecommerce",Risk Management,Internal Audit,Risk Compliance,Sox,Auditing
+Admin/Maintenance/Security/Datawarehousing,System Security,"It Software - Network Administration , Security","It-Software, Software Services",Supervisor,Manual,Vulnerability Assessment,Monitoring,Team Management
+Admin/Maintenance/Security/Datawarehousing,Technical Support Engineer,"It Software - Application Programming , Maintenance","It-Software, Software Services",Procurement,Statistics,Relationship Executive,Onsite Support,Basic
+Admin/Maintenance/Security/Datawarehousing,System Security,"It Software - Network Administration , Security","Office Equipment, Automation",Juniper,Vpn,Firewall,Log Analysis,Networking Protocols
+Admin/Maintenance/Security/Datawarehousing,Dba,"It Software - Dba , Datawarehousing","It-Software, Software Services",Lead Administrator,Db2,Project Delivery,Application,Language Skills
+Airline,Ground Staff,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Airport,Call Center,Ground Staff Activities,Ground Handling,Aviation
+Airline,Ground Staff,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Fresher,Bpo,Customer Service,Arrivals,Airport Operation
+Airline,Cabin Crew,"Travel , Tours , Ticketing , Airlines","Aviation, Aerospace, Aeronautical",Restaurant Manager,Rm,Fast Food,Cafe,Restaurant Management
+Airline,Cabin Crew,"Travel , Tours , Ticketing , Airlines","Aviation, Aerospace, Aeronautical",Qsr,Cafe Manager,Cafe - Manager,Restaurant General Manager,Restaurant
+Airline,Ground Staff,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Airport,Call Center,Cabin Crew,Ground Staff Activities,Ground Handling
+Airline,Ground Staff,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Customer Service Associate,Ticketing,Aviation,Fresher,Air Ticketing
+Airline,Ground Staff,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Bpo,Customer Service,Arrivals,Airport Operation,Air Hostess
+Airline,Ground Staff,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Airport,Call Center,Ground Staff Activities,Ground Handling,Aviation
+Airline,Ground Staff,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Fresher,Bpo,Customer Service,Arrivals,Airport Operation
+Airline,Cabin Crew,"Travel , Tours , Ticketing , Airlines","Recruitment, Staffing",Airlines,Cv,Business Executive,Rating,Flying
+Airline,Ground Staff,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Customer Support,Air Hostess Activities,Fresher,Bpo,Ground Staff Activities
+Airline,Ground Staff,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Ticketing,Customer Service,Hotel Management,Airport,Reservation
+Airline,Ground Staff,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Air Hostess Activities,Ground Staff Activities,Ticketing,Customer Service,Airport
+Airline,Cabin Crew,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Airlines,Air Hostess Activities,Cabin Crew Activities,Flight Attendant,Aerospace
+Airline,Cabin Crew,"Travel , Tours , Ticketing , Airlines","Aviation, Aerospace, Aeronautical",Fresher,Air Hostess,Airways,Aviation,Cabin Crew
+Airline,Ground Staff,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Customer Support,Air Hostess Activities,Fresher,Bpo,Ground Staff Activities
+Airline,Ground Staff,"Travel , Tours , Ticketing , Airlines","Travel , Hotels , Restaurants , Airlines , Railways",Ticketing,Customer Service,Hotel Management,Airport,Reservation
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"It-Software, Software Services",Statistics,Sql,Predictive Modeling,Data Mining,Python
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"It-Software, Software Services",Tableau,Sas,Data Analytics,Data Management,Analytics
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Kpo, Research, Analytics",Business Analytics,Reporting,Kpo,Data Analytics,Data Analysis
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Sql,R,Nosql,Data Modeling,Machine Learning
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Python,Scala,Data Science,Data Visualization,Algorithm
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Sql,Statistics,R,Sales,Solution Design
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Statistical Modeling,Machine Learning,E,Proposals,Project Management
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Business Analysis,Qlikview,Tableau,Business Intelligence,Data Warehousing
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Data Modeling,Ms Sql Server,Alteryx,Power Bi,Data Visualization
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Php,Perl,C++,Consulting,Risk Analytics
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Business Analyst,Jquery,Sas,Xml,Outsourcing
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Machine Learning,Python,C++,Nosql,Oozie
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Hadoop,Java,Languages,Big Data,Spark
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Barcode,Solution Design,Gps,Iot,Business Analyst
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"It-Software, Software Services",Information Retrieval,Computer Vision,R,Machine Learning,Deep Learning
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"It-Software, Software Services",Python,Natural Language Processing,Sas,Nlp,Neural Networks
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Bpo, Call Centre, Ites",Data Analytics,Communication Skills,Business Intelligence,Data Visualization,Fraud Analytics
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Business Analysis,Client Communication,It Services,Proposal Development,Wireframing
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Kpo, Research, Analytics",R,Statistical Modelling,Sas,Python,Project Management
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"It-Software, Software Services",Sql,R,Predictive Modeling,Marketing,Data Science
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"It-Software, Software Services",Python,Tableau,Alteryx,Data Analytics,Data Analysis
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Strategy, Management Consulting Firms",Business Analysis,Statistics,Sql,Statistical Modeling,Sas
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"It-Software, Software Services",Base Sas,Programming,Sas,Project Management,Testing
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Kpo, Research, Analytics",Oil & Gas,Upstream,Downstream,Secondary Research,Energy
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Kpo, Research, Analytics",Conversion,Analyst,Customer Experience,Product Enhancement,E - Commerce
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Etl,Data Analytics,Data Analysis,Dw,Data Visualization
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Big Data,Data Warehousing,Data Reporting,Sas,Bi
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Kpo, Research, Analytics",Version Control,Stakeholder Management,Functional Testing,Business Understanding,Business Development
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Excel,Statistics,Clustering,Segmentation,Predictive Modeling
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Banking,Model Validation,Business Analyst,Sas,Analytics
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Advanced Analytics,Cross Selling,Design Development,Customer Management,Stress Testing
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Data Architecture,Big Data,Vendor Selection,Senior Management,Portfolio Management
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Management Systems,People Management,Operations,Sql,Sas
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Supply Chain,Spotfire,Digital Analytics,Machine Learning,Vba
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Construction, Engineering, Cement, Metals",Mis,Excel,Forecasting,Presentation Skills,Coordinating Skills
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Animation, Gaming",Sql,Business Analytics,Sas Bi,Database Design,Matlab
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Animation, Gaming",Tableau,Sas,Sap Bo,Power Bi,Techno Functional
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Client Relationship,Enterprise Software,Product Development,Market Intelligence,Merchandising
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Business Analysis,Excel,Sql Queries,Management Systems,Customer Support
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Kpo, Research, Analytics",Senior Research Analyst,Kpo,Research Analyst,Analyst,Research
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Python,Machine Learning,Ead,Model Development,Analytics
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Predictive Modeling,Statistical Modeling,Pd,Data Modeling,Lgd
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Sql,Statistics,R,Predictive Modeling,Machine Learning
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Sas,Hive,Time Series,Hadoop,Big Data Analytics
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Statistics,Mis,Business Intelligence,Sas,Analytics
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Kpo, Research, Analytics",Secondary Research,Market Research Analyst,Research Analyst,Primary Market Research,Research Associate
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Semiconductors, Electronics",Data Modeling,Data Mining,R,Mapping,Business Intelligence
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Real Estate, Property",Business Analysis,Excel,Administration,Administrative Support,Power Point Presentation
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Pharma, Biotech, Clinical Research",Mis,Data Analytics,Pharma Analytics,Pmp,Sap
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Statistics,Data Modeling,Machine Learning,Python,Sas
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Business Analysis,Sql,Excel,New Business,Reporting Tools
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Requirement Gathering,Uat,Gap Analysis,Visio,Data Analysis
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Recruitment, Staffing",Business Analysis,Business Process,Supply Chain,Mba,Communication Skills
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"It-Software, Software Services",Secondary Research,People Management,Sas Sql,Research Analysis,Primary Research
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"It-Software, Software Services",Artificial Intelligence,Advanced Analytics,Team Leading,Data Science,Python
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"It-Software, Software Services",Statistics,Predictive Modeling,Python,Sas,Analytics
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Jenkins,Spark,Play Framework,Javascript,Groovy
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Json,Bash,Python,Java,Hadoop
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Business Analysis,Statistics,Data Analytics,Machine Learning,Predictive Analytics
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Pharma, Biotech, Clinical Research",Adam,Base Sas,Clinical Sas Programmer,Sas,Sdtm
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Bpo, Call Centre, Ites",Business Analysis,Business Analytics,Business Intelligence,Dashboards,Business Planning
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Bpo, Call Centre, Ites",Ms,Senior Business Analyst,Presentation,Business Analyst,Excel Powerpoint
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Ibm,Ms Office,Data Mining,Mis Reporting,Cognos
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Data Analytics,Dashboards,Communication Skills,Risk Management,Macros
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Vba,Written Communication,Data,Operational Risk Management,Excel
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Education, Teaching, Training",Risk Management,Management Systems,Business Process,Lean,Process Excellence
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Education, Teaching, Training",Process Improvement,Training,Performance Improvement,Strategic Planning,Six Sigma
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Cloud,R,Gcp,Machine Learning,Big Data
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Bpo, Call Centre, Ites",Ms Access,Team Handling,Sql,Stakeholder Management,Sql Queries
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Bpo, Call Centre, Ites",Business Intelligence,Advanced Excel,Power Point Presentation,Vba,Excel Powerpoint
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Sql,Risk Analytics,Sas,Analytics,Credit Risk
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Strategy, Management Consulting Firms",Business Analysis,Model Development,Base Sas,Modeling,Clustering
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Sql,Sql Server,Business Intelligence,Big Data,Ssis
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"It-Software, Software Services",Ssas,Aws,Informatica,Data Analytics,Etl
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Internet Banking,Javascript,Retail Banking,Business Analysis,Corporate Banking
+Analytics & Bi,Data Analyst,Analytics & Business Intelligence,"Kpo, Research, Analytics",Data Mining,Machine Learning,Big Data,Artificial Intelligence,Data Science
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"It-Software, Software Services",Statistics,Sql,Sas,Data Analytics,Data Management
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Recruitment, Staffing",Business Analysis,Excel,Sql,Ba,R
+Analytics & Bi,Business Analyst,Analytics & Business Intelligence,"Recruitment, Staffing",Analytical Skills,Web Analytics,Omniture,Business Analyst,Web Technologies
+Analytics & Bi,Analytics Manager,Analytics & Business Intelligence,"Banking, Financial Services, Broking",Clustering,Predictive Modelling,Modelling,Segmentation,Sas
+Engineering Design,Design Engineer,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Asme,Ug Nx,Teamcenter,Manufacturing Process,Dimension
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Automotive,Cad,Catia,Monitoring,Die Casting
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Ticketing,Ms Office,Product Costing,Budgeting,Accessories
+Engineering Design,Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Autodesk,Erp,Pumps,Microsoft Applications,Automation
+Engineering Design,Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Interpersonal Skills,Plm,Product Design,Fabrication,Valves
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Semiconductors, Electronics",Hardware Design,Continuous Improvement,Schematic,Risk Management,Embedded Systems
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Semiconductors, Electronics",Resource Management,Project Management,Atmel,Engineering Services,Hardware Engineering
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Project Execution,Testing,Research,Project Planning,Prototype
+Engineering Design,Design Engineer,"Engineering Design , R&D","Recruitment, Staffing",Adobe,Autocad,Matlab,Project Engineer,C
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Working,Diploma,In Design,Pre,Solid Works
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Mechanical Design,Auto Cad,Engineering Management,Function,Software Packages
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",3D,Process Engineering,System Design,2D,Microstation
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Detailing,Chemical Engineering,Direct3D,Drafting,Autocad
+Engineering Design,Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Design Engineering,Creo,Windchill,Teamcenter,Pro - Cabling
+Engineering Design,Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Plm,Detailing,Sheet Metal Design,Structural Design,Heavy Machinery
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",Shop,Specifications,Projects,Drawings,Us
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",Ls Dyna,Hypermesh,Static,Nx,Nastran
+Engineering Design,Design Engineer,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Servo Motors,Maintenance,Plc,Automation Engineering,Electricals
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Instrumentation Design,Epc,B.Tech,Drafting,Electrical Design
+Engineering Design,Design Engineer,"Engineering Design , R&D","Recruitment, Staffing",Layout,Six Sigma,Detailing,Drafting,Development
+Engineering Design,Design Engineer,"Engineering Design , R&D","Recruitment, Staffing",Tools,Documentation,Iso,Cad,Engineering Design
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",Qc,Qa,Bidding,Room,Osp
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",Routing,Ticketing,Construction,Tool Design,Manager Quality Assurance
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",3D,Bim,Rcc,3D Modeling,Rebar
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Civil Engineering,Tekla,Detailing,Structural Engineering,Concrete
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Field Testing,Automotive,Simulation,Thermal,Aerodynamics
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Fluid Dynamics,Macros,Python,Aerospace,Cfd
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Excel,Cad,Analytical Skills,Engineering Design,Production Engineering
+Engineering Design,Design Engineer,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Design,Ug Nx,Teamcenter,Pdm,Creo
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",Perl,Design Verification,Simulation,Soc,Computer Architecture
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",Asic,Interpersonal Skills,Logic Design,Verilog,Unix
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Shipping, Marine",Design Review,Material Handling,Analytical,Cad,Drilling
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Shipping, Marine",Structural Analysis,Aerospace,Product Design,Hse,Staad Pro
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Pressure Vessels,Autocad,Static Equipment,Sec,Mechanical Design
+Engineering Design,Design Engineer,"Engineering Design , R&D","Semiconductors, Electronics",Design Development,Rs232,Rs485,Arm,Embedded Systems
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Telcom, Isp",Material Selection,Ciena,Sheet Metal,Cad,Networking
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Telcom, Isp",Thermal,Mechanical,Mechanical Design,Fabrication,Prototype
+Engineering Design,Design Engineer,"Engineering Design , R&D","Strategy, Management Consulting Firms",.Net,Testing,Android,Python,Php
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Commercial Buildings,Aisc,Checking,Erection,Detail Drawings
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",Asset Management,Customer Service,Customer Relationship,Vendor Management,Help Desk
+Engineering Design,Design Engineer,"Engineering Design , R&D","Recruitment, Staffing",Solid Edge,Machinery,Iso,Sheet Metal,Autocad
+Engineering Design,Design Engineer,"Engineering Design , R&D","Recruitment, Staffing",Draughtsman,Sheet Metal,Autocad,3D,Mechanical
+Engineering Design,Design Engineer,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Automotive,Coding,Embedded C,Data Processing,Mechatronics
+Engineering Design,Design Engineer,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Vb,Matlab,Esp,Debugging,System Engineering
+Engineering Design,Design Engineer,"Engineering Design , R&D","Advertising, Pr, Mr, Event Management",Design,Autocad,Illustrator,3D,Account Management
+Engineering Design,Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Recruitment,Fuel,Sharing,Engineering Design,Technical Recruitment
+Engineering Design,Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Apr,Com,Civil,Staffing,Copyright
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Chemical,Compliance,Pfd,Project Execution,Advertising
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Business Executive,Quality Systems,Process Engineering,Hydraulic Calculations,Process Equipment
+Engineering Design,Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Ms Access,Excel,Word,Sql,Business Intelligence
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Recruitment, Staffing",Sanitary,Claims,Hospitality,Concept Design,Real Estate
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Recruitment, Staffing",Business Executive,Fire Protection,Water Supply,Plumbing,Stp
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Query Resolution,Supervisor,Monitoring,Civil,Consulting
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Semiconductors, Electronics",Signal Processing,Timing Closure,Dft,Rtl Coding,Analog Design
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Semiconductors, Electronics",Silicon,Jtag,Ips,Usb,Pcie
+Engineering Design,Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Mechanical Design,Design Engineering,Autocad,Pro - E,Ansys
+Engineering Design,Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Solid Modeling,Ideas,Inventor,Solid Works,Mechanical Engineering
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Recruitment, Staffing",Design Review,Analog,Thermal,Emi,Dft
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Recruitment, Staffing",Emc,Power Electronics,Power Supply,Usb,Firmware
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Pds,Microstation,Cable Schedule,Autocad,Electrical Engineering
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Sp3D,Lighting Design,Substation,Electrical Design,Earthing
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Semiconductors, Electronics",Schematic,Power Supply,Signal Integrity,Allegro,Pcb Designing
+Engineering Design,Design Engineer,"Engineering Design , R&D","Electricals, Switchgears",Design Engineering,Analytical,Siemens,Autocad,Engineering Design
+Engineering Design,Design Engineer,"Engineering Design , R&D","Electricals, Switchgears",Substation Design,Document Management System,Gis,Team Management,Substation
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",Instrumentation Engineering,Engineering Design,Sp3D,Microsoft,Instrumentation
+Engineering Design,Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Flow Meter,Tendering,Metering,Measurement,Steel
+Engineering Design,Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Automation,Calculation,Piping,Mechanical,Instrumentation
+Engineering Design,Design Engineer,"Engineering Design , R&D","Strategy, Management Consulting Firms",Design Engineering,Cad,Ms Office Suite,Plant Design,3D
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Boq,Dpr,Team Management,Rate Analysis,Project Management
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Thermal,Simulation,System Programming,Hardware Design,Smps
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Power Electronics,Matlab,Simulink,Debugging,System Design
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Detail Drawings,Injection Moulding,Tool Room Manufacturing,Iso 9001,Mould Design
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Automotive,Test Cases,Testing,Automobile Engineering,Ms Office
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",Sheet Metal,Shop Floor,Semiconductor,Process Planning,Engineering Design Services
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",Product Design,Aerospace,Mining,Heavy Equipment,Analytics
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Pharma, Biotech, Clinical Research",Production Planning,Quality Control,Detailing,Design Calculations,Design Management
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Tool Manufacturing,Rfqs,Ve,Project Management,Ppap
+Engineering Design,Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Adobe,Autocad,Matlab,Project Engineer,Circuit Designing
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",Adobe,Autocad,Matlab,Project Engineer,C
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",System Analysis,Automotive Engineering,Ansys Fluent,T - Grid,Cfd
+Engineering Design,Design Engineer,"Engineering Design , R&D","Aviation, Aerospace, Aeronautical",Pcb Designing,Fabrication,Pcb Layout,Dfm,Dft
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Staad Pro,Stadd,Civil Engineering,Design Engineer,Stadd - Pro
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Media, Entertainment, Internet",Consumer Electronics,Packaging,Teaching,Hardware Design,Usage
+Engineering Design,Design Engineer,"Engineering Design , R&D","Recruitment, Staffing",Industrial Products,Sheet Metal,Recruitment,Engineering Design,Labour Laws
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Staad Pro,Dolphins,Robot,Marine,Detailed Design
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Government, Defence",Defense,Defence,Ansys,3D Modeling,Solid Works
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Process Engineer,Data Sheets,Part Time,Acoustic,Hse Management
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Banking, Financial Services, Broking",Rail,Scope,Metro,Investigation,Technical
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Automotive,Simulation,Analytical,Diagnostics,Mechatronics
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Matlab,Powertrain,Simulink,Instrumentation,Change Management
+Engineering Design,Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Piping Isometrics,Soft Skills,Process Equipment,Solid Edge,Equipment Layout
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Structural Engineering,Transmission,Billing,Transmission Line,Civil
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Rcc,Fe Analysis,Civil Engineering,Robot,Safe
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Structural Engineering,Aci,Asce,Steel Structures,Etabs
+Engineering Design,Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Electrical & Instrumentation,Vsat,Engineering,Scada,Gas
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Semiconductors, Electronics",Hardware Design,Middleware,Design Patterns,Software Architecture,Firmware
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Semiconductors, Electronics",Device Driver Development,Linux,Iot,Electronics Engineering,Electricals
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Pid,Analog,Simulation,Analytical,Electrical Machines
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Control System,Matlab,Power Electronics,Simulink,Continuous Improvement
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Courier, Transportation, Freight , Warehousing",Communication Skills,Electronics,Interpersonal Skills,Computer Science,Written Communication
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Geotechnical Engineering,Analytical,Cad,Engineering Design,Usage
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Windows,Engineering Project Management,Mining,Staffing,Civil Engineering
+Engineering Design,Design Engineer,"Engineering Design , R&D","It-Software, Software Services",Simulation,Cad,Machine Learning,Cfd,Licensing
+Engineering Design,Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Software Design,Sheet Metal,Autocad,Manufacturing Process,Printing
+Engineering Design,Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Solid Works,Fabrication,Mechanical Engineering,Layout Planning,Draughtsman
+Engineering Design,Design Engineer,"Engineering Design , R&D","Pharma, Biotech, Clinical Research",Pfd,Instrument Index,Bidding,Instrumentation Engineering,Costing
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Recruitment, Staffing",Etp,Boq,Assistant Manager,Costing,Technical Skills
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Recruitment, Staffing",Layout Preparation,Erection Commissioning,Wtp,Stp,Cost Estimation
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Design Engineering,Feed,Offshore,Onshore,Instrumentation Engineer Design
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Fmcg, Foods, Beverage",Procurement,Electronics,Quality Testing,Home Appliances,Design Development
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Fmcg, Foods, Beverage",Emc,Consumer Goods,Electricals,Product Implementation,Cross Functional Coordination
+Engineering Design,Design Engineer,"Engineering Design , R&D","Telcom, Isp",Autocad,Wan,Tcp,Networking,Cable
+Engineering Design,Design Engineer,"Engineering Design , R&D","Semiconductors, Electronics",Embedded Development,Rf Design,Pcb Designing,Arm,Microcontroller
+Engineering Design,Design Engineer,"Engineering Design , R&D","Strategy, Management Consulting Firms",Mar,Microstation,Petrochemical,Engineering Design,Sp3D
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Diagnostics,Autosar,Embedded C,Os,J1939
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Refinery,Design,Petrochemical,B.Tech,Gas
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Fired Heater,Mechanical,Boiler,Heater,Oil
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Chemical,Hydraulic Calculations,Petrochemical,Simulation,Economics
+Engineering Design,Design Engineer,"Engineering Design , R&D","Chemicals, Petrochemical, Plastic, Rubber",3D Modeling,Iso,Product Marketing,Technical Documentation,Total Quality Management
+Engineering Design,Design Engineer,"Engineering Design , R&D","Chemicals, Petrochemical, Plastic, Rubber",Six Sigma,Tqm,Manufacturing Engineering,Technical Support,Product Testing
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Inventor,Project Analysis,Heavy Equipment,Heavy Engineering,Detailing
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Team Building,Solid Works,Design Engineering,Quality Assurance,Detail Drawings
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","It-Software, Software Services",Microcontroller,Hardware Engineering,Mixed Signal,Emi,Analog Design
+Engineering Design,Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Smart Plant Review,Software Design,Power Generation,Project Execution,Data Sheets
+Engineering Design,Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Line List,Project Design,Piping Design,Hydraulic Calculations,Mechanical Engineering
+Engineering Design,Design Engineer,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Technical,Mechanical,Illustrator,Illustration,Isodraw
+Engineering Design,Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Design,Offshore,Technical Recruitment,Engineering,Technical
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Water Treatment, Waste Management",Wtp,Waste Water Treatment,Chemical Engineering,Flow Diagram,Data Sheets
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Water Treatment, Waste Management",Process Engineering,Pfds,Technical Sales,Ro,Process Design
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",New Product Development,Intellectual Property,Technical Evaluation,Control System,Matlab
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Operations,Environmental Engineering,Remediation,Visual Basic,System Design
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Administration,Network Analysis,Ms Office Word,Management,Litigation
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Pharma, Biotech, Clinical Research",Scientific Writing,Vendor Management,Team Motivation,Project Management,Clinical Development
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Pharma, Biotech, Clinical Research",People Management,Customer Management,Strategy,New Business Development,Medical Writing
+Engineering Design,Design Engineer,"Engineering Design , R&D","Industrial Products, Heavy Machinery",Autocad Engineer,Drafting,Electrical Cad,Design Engineer,Autocad
+Engineering Design,Design Engineer,"Engineering Design , R&D","Advertising, Pr, Mr, Event Management",Programming,Analytical,Linux,Hydrology,Fortran
+Engineering Design,Design Engineer,"Engineering Design , R&D","Automobile, Auto Anciliary, Auto Components",Adobe Illustrator,Pagemaker,Corel Draw,Illustrator,Manual
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Mis,Switchgear,Petrochemical,Manager Electrical,Engineering Design
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Oil And Gas, Energy, Power, Infrastructure",Direct Sales,Risk Management,Channel Sales,Sensors,Valves
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Bpo, Call Centre, Ites",Mpls,Stakeholder Management,Time Management,Isdn,Data Services
+Engineering Design,Senior Design Engineer,"Engineering Design , R&D","Bpo, Call Centre, Ites",Supervisor,Stm-1,Dsl,Database,Ethernet
+Engineering Design,Design Engineer,"Engineering Design , R&D","Semiconductors, Electronics",Rtl2Gdsii,Iccicc2 / Soc,Icc Icc2 / Soc,Icc,Soc
+Engineering Design,Design Engineer,"Engineering Design , R&D","Construction, Engineering, Cement, Metals",Cad,Purchase,Estimator,Cost,Troubleshooting
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Semiconductors, Electronics",Iso,Sheet Metal,Thermal,Ansys,Ansi
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Semiconductors, Electronics",Costing,Fabrication,Product Engineering,Prototype,Value Engineering
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Electricals, Switchgears",Product Marketing,Geometry,Analytical,Soc,Hardware Design
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Electricals, Switchgears",Static Timing Analysis,Asic,Automation,Verilog,Vhdl
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Recruitment, Staffing",Coordination Skills,Thermal Power Project,Chp,Autocad,Building
+Engineering Design,Technical Lead/Project Lead,"Engineering Design , R&D","Recruitment, Staffing",Ahp,Plant Layout,Civil,Electricals,Epc
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","It-Software, Software Services",Business Objects,Trend Analysis,Analytical Skills,Business Communication,Management
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","It-Software, Software Services",Finance,Analytical,Internet Searching,Accountancy,Market Intelligence
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Strategy, Management Consulting Firms",Continuous Improvement,Feedback,Service Delivery,Team Management,Team Leading
+Finance/Audit,Audit Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Accounting, Finance",System Developments,Internal Auditing,Operational Risk,Accounting,Risk Management
+Finance/Audit,Finance Executive,"Accounts , Finance , Tax , Company Secretary , Audit","Telcom, Isp",Finance,Financial Reporting,Financial Control,Accounting,Auditing
+Finance/Audit,Finance Executive,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Forecasting,Financial Reporting,Accounting,Budgeting,Finance
+Finance/Audit,Audit Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Business Process,Mis,Erp,Vat,Cash Flow
+Finance/Audit,Audit Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Excise,Sales Tax,Bpo,Loans,Costing
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Bpo, Call Centre, Ites",Ca,Financial Reporting,Mba,Financial Analysis,Variance Analysis
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Advertising, Pr, Mr, Event Management",Mis,Cash Flow,Financial Analysis,Revenue Assurance,Budgetary Control
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Advertising, Pr, Mr, Event Management",Fund Raising,Variance Analysis,Auditing,Budgeting,Analytics
+Finance/Audit,Credit/Control Executive,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Invoices,Payments,Collection,Account,Queries
+Finance/Audit,Credit/Control Executive,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Clearance,Monitoring,Management,Billing,Credit Control
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Consumer Electronics, Appliances, Durables",Business Management,Accounts Payable,Control Plan,Payable Management,Accounting
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Mba Finance,Venture Capital,Cfa,Investment Research,Financial Research
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Private Equity,Equity Research,Financial Analyst,Investment Banking,Data Analyst
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Ms Access,Sql,Forecasting,Analytical,Financial Services
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Financial Reporting,Ms Office,Risk Management,Quantitative Research,Manager Quality Assurance
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Construction, Engineering, Cement, Metals",Taxation,Business Planning,Finance,Balance Sheet,Financial Reporting
+Finance/Audit,Audit Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Recruitment, Staffing",Excel,Finance,Sow,Standard Operating Procedures,Operational Excellence
+Finance/Audit,Audit Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Recruitment, Staffing",Tds,Accounting,Financial Reporting,Fixed Assets,Physical Verification
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Operations,Taxation,Wealth Management,Reconciliation,Financial Services
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Ifrs,Financial Accounting,Financial Reporting,Financial Statements,Balance Sheet
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Recruitment, Staffing",Excel,Financial Analyst,Business Planning,Working Capital,Financial Control
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Recruitment, Staffing",Wholesale,Financial Reporting,Http,Php,Auditing
+Finance/Audit,Credit/Control Executive,"Accounts , Finance , Tax , Company Secretary , Audit","Courier, Transportation, Freight , Warehousing",Supervisor,Sales,Tam,Billing,Costing
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Finance Management,Statutory,Financial Information,Bankers,Monitoring
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Cash Flows,Financial Reports,Relationships,Developing,E
+Finance/Audit,Investor Relationship-Executive/Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Medical, Healthcare, Hospitals",Finance,Mis Reporting,Reconciliation,Financial Modelling,Balance Sheet
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Bpo, Call Centre, Ites",Data Enrichment,Master Data,Data Quality,Data Profiling,Data Cleansing
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Bpo, Call Centre, Ites",Sap,Team Management,Data Migrations,Data Governance,Hana
+Finance/Audit,Credit/Control Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Retail, Wholesale",General Insurance,Insurance Sales,Agent,Finance,Sales
+Finance/Audit,Credit/Control Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Retail, Wholesale",Banking,Agency,Sales Executive,Sales Officer,Insurance
+Finance/Audit,Investor Relationship-Executive/Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",O2C,Mba Finance,P2P,Metrics,Lean
+Finance/Audit,Investor Relationship-Executive/Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Agile,Accounting,Six Sigma Certified,Customer Management,Project Management
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit",Food Processing,Mis,Forecasting,Planning,Estimation,Costing
+Finance/Audit,Audit Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Strategy, Management Consulting Firms",Assurance,Stat Audit,Auditing,Ifrs,Indian Gaap
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Management Reporting,Forecasting,Financial Reporting,Ms Office,Accounting Software
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Financial Statements,Financial Management,Expenses,Finance,Analytical Skills
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Sql,Forecasting,Macros,Change Management,Ms Office
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Data Analysis,Risk Management,Balance Sheet,Front Office,Budgeting
+Finance/Audit,Audit Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Bpo, Call Centre, Ites",Taxation,Accounting,Tax,Reconciliation,Accounts
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","It-Software, Software Services",Operations,Excel,Erp,Balance Sheet,Financial Analysis
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","It-Software, Software Services",Analytical,Technical Support,Customer Service,It Services,Process Improvement
+Finance/Audit,Audit Manager,"Accounts , Finance , Tax , Company Secretary , Audit","It-Software, Software Services",Statutory Audit,Big4,Gaap,Assurance,Audit
+Finance/Audit,Audit Manager,"Accounts , Finance , Tax , Company Secretary , Audit","It-Software, Software Services",Vat,Tds,French,Excise,Territory Executive
+Finance/Audit,Audit Manager,"Accounts , Finance , Tax , Company Secretary , Audit","It-Software, Software Services",Ms Office,Payroll,Management,Tally,San
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Bpo, Call Centre, Ites",Financial Reporting,Forecasting,Finance,Accounting,Capex
+Finance/Audit,Audit Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Agriculture, Dairy",Indian Accounting Standards,Statutory Audit,Indian Gaap,Internal Audit,Ifc
+Finance/Audit,Finance Executive,"Accounts , Finance , Tax , Company Secretary , Audit","It-Software, Software Services",Accounts Payable,Finance,Strategy,Reconciliation,P2P
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Recruitment, Staffing",Financial Planning,Cost Reduction,Analytical,Macros,Oracle
+Finance/Audit,Treasury Manager,"Accounts , Finance , Tax , Company Secretary , Audit",Legal,Corporate Finance,Structured Finance,Business Executive,Private Equity,Relationship
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Accounting, Finance",Forecasting,Accounts Payable,Finance Management,Accounting,Accounts Receivable
+Finance/Audit,Finance Executive,"Accounts , Finance , Tax , Company Secretary , Audit","Accounting, Finance",Accounts Receivable,Accounting,Order To Cash,Otc,O2C
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Recruitment, Staffing",Data Entry,Risk Management,Analysts,Finance,Analytical Skills
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Recruitment, Staffing",Administration,Credit Officers,Report Generation,Manager,Senior Manager
+Finance/Audit,Finance Executive,"Accounts , Finance , Tax , Company Secretary , Audit","Industrial Products, Heavy Machinery",Taxation,Finance,Financial Management,Accounting,Audit Compliance
+Finance/Audit,Finance Executive,"Accounts , Finance , Tax , Company Secretary , Audit","Industrial Products, Heavy Machinery",Ms Office,Tax Audit,Transfer Pricing,Auditing,Gl
+Finance/Audit,Audit Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Strategy, Management Consulting Firms",Big4,Finance,Statutory Audit,Financial Due Diligence,Financial Analysis
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Billing,Saving,Cost,Vendor,Management
+Finance/Audit,Finance Executive,"Accounts , Finance , Tax , Company Secretary , Audit",Tyres,Income Tax,Internal Audit,Taxation,Returns,Finance
+Finance/Audit,Finance Executive,"Accounts , Finance , Tax , Company Secretary , Audit",Tyres,Statutory Audit,Tds,Accounting,Gst,Tcs
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Industry Research,Equity Research,Cash Flow,Relationship Building,Market Data
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Manager Quality Control,Relationship,Financial Modelling,Report Writing,Analytical Research
+Finance/Audit,Treasury Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Chemicals, Petrochemical, Plastic, Rubber",Mis,Payments,Banking,Forex,Financial Institutions
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Corporate Finance,Balance Sheet,Commercial Banking,Financial Analysis,Reconciliation
+Finance/Audit,Financial Analyst,"Accounts , Finance , Tax , Company Secretary , Audit","Banking, Financial Services, Broking",Financial Services,Business Operations,Wealth Management,Auditing,Asset Management
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Fmcg, Foods, Beverage",Taxation,Corporate Accounting,Financial Management,Banking Operations,Corporate Finance
+Finance/Audit,Finance/Budgeting Manager,"Accounts , Finance , Tax , Company Secretary , Audit","Fmcg, Foods, Beverage",Management Reporting,Financial Statements,Auditing,Budgeting,Financial Analysis
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Technical Recruiter,It Recruitment,Telephonic,Sourcing,Hr
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Internet, Ecommerce",Mis,Erp,Recruitment,Human Resources,Talent Management
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Petrochemical,Corporate Manager,Corporate,Industrial Relations,Employee Engagement
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Employee Retention,Job Evaluation,Hrd,Succession Planning,Hr Policies
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Cold Calling,Process,Hris,Time,Monthly Reports
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",English,Business Executive,Hr Executive,Staffing,Email
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Recruiter,Hr Recruiter,Talent Acquisition,Technical Recruitment,Recruitment
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Permanent Staffing,It Recruiter,Technical Recruiter,Contract Staffing,Staffing
+Hr/ Recruitment / Ir,Employee Relations Executive,"Hr , Recruitment , Administration , Ir","Fmcg, Foods, Beverage",Factory Hr,Recruitment,Employee Engagement,Pf,Manpower Budgeting
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Mis,Hr Recruiter Internship,Erp,Recruitment,Ms Data Management
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Human Resources,Hr Head,Talent Management,Succession Planning,Reports
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Lateral Hiring,Communication Skills,Recruitment,Industry Mapping,Sourcing
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Executive Hiring,Leadership Hiring,Executive Search,Bulk Hiring,Talent Acquisition
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Communication,Recruitment,Learning,Screening,Sourcing
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Screening,It Recruiter,Recruiter,Sourcing,It Recruitment
+Hr/ Recruitment / Ir,Hr Business Partner,"Hr , Recruitment , Administration , Ir","Construction, Engineering, Cement, Metals",Human Resource Management,Benefits,Pms,Talent Management,Compensation
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Flex,Industrial Products,Networking,Management,Consulting
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Recruitment,Talent Acquisition,Technical Recruitment,Technical Hiring,It Hiring
+Hr/ Recruitment / Ir,Staffing Specialist/ Manpower Planning,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Interviewing,Recruitment,Global Hr,Sourcing,Relationship Management
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Client Management,Analytical,Healthcare,Financial Services,Administration
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Billing,Data Management,Hr,Payroll,Staffing
+Hr/ Recruitment / Ir,Training Manager,"Hr , Recruitment , Administration , Ir","Consumer Electronics, Appliances, Durables",Korean,Learning & Development,Training,Tni,Human Resource
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Tele Caller,Aviva,Telecalling,Birla Sun Life,Non It Recruitment
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Us It Recruitment,Technical Recruitment,Staff Augmentation,Project Management,Us Staffing
+Hr/ Recruitment / Ir,Payroll Executive,"Hr , Recruitment , Administration , Ir","Bpo, Call Centre, Ites",Leave Management,Payroll Processing,Hr Operations,Statutory Compliance,Payroll Management
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Resourcing,Recruitment,Permanent Staffing,It Recruiter,It Hiring
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",It Staffing,Technical Recruiter,Contract Staffing,Staffing,It Recruitment
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Recruiter,Tech Recruiter,Recruitment,Technical Recruitment,Technical Hiring
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Performance Management,Cold Calling,Dice,Portal,Project Management
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Grievance Handling,Employee Grievances,Payroll Processing,Bonus,Hr Mba
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Gratuity,Statutory Compliance,Leave,Attendance,General Administration
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Ms Office,Team Coordination,Academic,Office Management,Presentation Skills
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Strategy, Management Consulting Firms",Taxation,Javascript,Database Maintenance,Recruitment,Consultancy
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Recruitment,Mba Fresher,Interviewing,Mba Hr Fresher,Recruiter
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Construction, Engineering, Cement, Metals",Head Hr,Recruitment,Cvs,Scheduling,Head Hunting
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Medical, Healthcare, Hospitals",Networking,Market Survey,Administration,Sales Achievement,Hr
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","Automobile, Auto Anciliary, Auto Components",Manpower Planning,Recruitment,Employee Engagement,Pms,Selection
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","Automobile, Auto Anciliary, Auto Components",Talent Management,Policy Formulation,Hr,Statutory Compliance,Training
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Recruitment,Human Resources,Hr Head,Talent Management,Succession Planning
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Strategy, Management Consulting Firms",Admin Executive,Employee Relations,Executive Hr Administrator,Recruitment,General Administrator
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Strategy, Management Consulting Firms",Hr Administrator,Web Designing,Payroll Processing,Payroll,Dec
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Fmcg, Foods, Beverage",Salary Administration,Hr Generalist,Salary Admin,Leave Management,Payroll Management
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Travel , Hotels , Restaurants , Airlines , Railways",Screening,Hr Recruiter,Recruitment,Sourcing,Cold Calling
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Employee Communication,Taxation,Policy Implementation,Analytical,Manpower
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Payroll,Performance Appraisal,Induction,Organization Development,Hiring
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Fertilizers, Pesticides",Record Keeping,Mis,Law,Travel,Data Collection
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Printing, Packaging",Interviewing,Interview Coordination,Human Resource Management,Joining Formalities,Hr
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Mis,Erp,Recruitment,Ms Data Management,Human Resources
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Talent Management,Succession Planning,Reports,Stakeholders,Talent Acquisition
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Bpo, Call Centre, Ites",Recruiter,Vendor Management,Recruitment,Kpo,It Hiring
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Management Services,It Services,Dice,Sourcing,Negotiation Skills
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Application Management,It Staffing,It Consulting,Technical Recruitment,Us Staffing
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Legal Management,Recruitment,Hr Manager,Senior Hr Executive,Hr
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Tech Recruiter,Recruitment,It Recruiter,Technical Recruiter,It Recruitment
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Hr Recruiter,Recruiter,It Recruiter,Interviewing,Technical Recruiter
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Strategic Planning,Hr Generalist,Statutory Compliance,Policies,Stakeholder Management
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Hr Generalist Activities,Pms,Labour Laws,Procedures,Esic
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Induction,Epf,Hr Budgeting,Strategic Hr,Onboarding
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","Fmcg, Foods, Beverage",Recruitment,Human Resource Management,Onboarding,Talent Sourcing,Compensation
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","Fmcg, Foods, Beverage",Performance Management,Hr,Statutory Compliance,Employee Relations,Training
+Hr/ Recruitment / Ir,Training Manager,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Mis,Recruitment,Human Resources,Talent Management,Succession Planning
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Cloud,Technical Recruitment,Technical Recruiter,It Recruiter,It Hiring
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Recruitment,Performance Appraisal System,Benefits,Training Needs,Selection Process
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Hr Policy Formulation,Compensation,Performance Management,Payroll Management,Employee Relations
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Recruiter,Consultancy,Indeed,Interviews,Consultant
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Screening,Talent Acquisition,Recruitment,Portal,Shortlisting
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Hr Recruiter,Volume Hiring,Technical Recruitment,It Recruiter,C2H
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",It Staffing,Technical Recruiter,Contract Staffing,Temporary Staffing,It Recruitment
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Excel,Business Solutions,Customer Engagement,Recruitment,Networking
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Agile,Front End,Competitive Intelligence,Market Research,Staffing
+Hr/ Recruitment / Ir,Recruitment Manager,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Client Management,Escalation Management,Client Engagement,Service Delivery,Team Management
+Hr/ Recruitment / Ir,Recruitment Manager,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Rpo,Office Skills,Account Management,It Recruitment,Mass Hiring
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Hr Administration,Employee Grievances,Employee Engagement,Hr Generalist,Employee Relations
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Bpo, Call Centre, Ites",Salary,Screening,Recruitment,Mapping,Hr
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Bpo, Call Centre, Ites",Interviewing,Linkedin,Hiring,Sourcing,Selection
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Bpo, Call Centre, Ites",Data Mining,Interviewing,Recruitment,Networking,Negotiation
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Bpo, Call Centre, Ites",Hr Manager,Head Hunting,Doc,Pdf,Database
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Bpo, Call Centre, Ites",Ba,Recruiters,Telesales,Freelance,Fresher
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Bpo, Call Centre, Ites",Call Center,Mca,Voice Process,Cce,Mba
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Bpo, Call Centre, Ites",Bcom,Bca,Bpo Fresher,Bpo,Bsc
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Contract Staffing,Screening,Head Hunting,Sourcing,It Recruitment
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Screening,Recruitment,Talent Acquisition,Interviewing,Non It Recruitment
+Hr/ Recruitment / Ir,Training Manager,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Mis,Erp,Recruitment,Human Resources,Talent Management
+Hr/ Recruitment / Ir,Pay Roll/Compensation Manager,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Business Solutions,Payroll Executive,Human Resource Management,Bpo,It Services
+Hr/ Recruitment / Ir,Staffing Specialist/ Manpower Planning,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",W2,Non - It Recruiter,Non It Recruitment,Us Staffing,Strong Communication Skills
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Liabilities,Policies,Maintaining,Formulation,Procedures
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Hr Recruiter,Recruitment,Talent Acquisition,Client Coordination,Staffing
+Hr/ Recruitment / Ir,Hr Business Partner,"Hr , Recruitment , Administration , Ir","Bpo, Call Centre, Ites",Hrbp,Business Partnering,Grievance Handling,Transaction Processing,Business Hr
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Oil And Gas, Energy, Power, Infrastructure",Recruitment,Team Management,Sourcing,Hr Assistance,Vendor Management
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Oil And Gas, Energy, Power, Infrastructure",Coordination Skills,Life Cycle,Shortlisting,Staffing,Verbal Communication
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Screening,Talent Acquisition,Recruitment,Sourcing,Market Mapping
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Positioning,Performance Management,Shortlisting,Hiring,Head Hunting
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Recruiter,It Recruitment,Recruitment,It Recruiter,Recruitement
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Hiring,It Sales,Talent Acquisition,Corporate Recruitment,It Marketing
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Consumer Electronics, Appliances, Durables",Business Partnering,Recruitment,Interviewing Candidates,Direct Sales,Sourcing
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Bpo, Call Centre, Ites",H1B,Screening,W2,Sourcing,Telephonic
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Bpo, Call Centre, Ites",Us It Recruitment,Ats,Hr,Ead,Job Posting
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Banking, Financial Services, Broking",Stakeholder Management,Recruitment,Sourcing,Salary,Hr
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Operations,Teradata,Recruitment,Internship,Interpersonal Skills
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","It-Software, Software Services",Microsoft,Medical Insurance,Machine Learning,Management,Data Analytics
+Hr/ Recruitment / Ir,Training Manager,"Hr , Recruitment , Administration , Ir","Industrial Products, Heavy Machinery",Mis,Recruitment,Human Resources,Talent Management,Reports
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Executive,Recruitment Coordinator,Cvs,Construction,Infrastructure
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",People Development,Talent Management,Administration,Employee Engagement,Industrial Relations
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Recruitment, Staffing",Service,Internal Communication,Talent Acquisition,Staffing,Policies
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","Education, Teaching, Training",Employee Relations,Hr Mis,Talent Management,Employee Engagement,Usage
+Hr/ Recruitment / Ir,Hr Manager,"Hr , Recruitment , Administration , Ir","Education, Teaching, Training",Human Resource Management,Hr,Payroll,Pdf,Training
+Hr/ Recruitment / Ir,Hr Executive,"Hr , Recruitment , Administration , Ir","Media, Entertainment, Internet",Hr Mis,Hr Recruiter,Recruitment Specialist,Talent Acquisition,Recruitment
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Media, Entertainment, Internet",Recruitment,Networking,Genetics,Product Management,E-Commerce
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Media, Entertainment, Internet",Analyst,Talent Acquisition,Sonicwall,Technical Support,Management
+Hr/ Recruitment / Ir,Recruitment Executive,"Hr , Recruitment , Administration , Ir","Pharma, Biotech, Clinical Research",Ats,Recruitment,Selection,Searching,Hiring
+Logistics,Logistics Manager,"Supply Chain , Logistics , Purchase , Materials","Consumer Electronics, Appliances, Durables",Operations,Warehouse,Manpower Handling,Labour,Logistics
+Logistics,Logistics Manager,"Supply Chain , Logistics , Purchase , Materials","Consumer Electronics, Appliances, Durables",E-Commerce,Monitoring,Fleet Management,Warehouse Operations,Assistant Manager Logistics
+Logistics,Logistics Manager,"Supply Chain , Logistics , Purchase , Materials","Recruitment, Staffing",Cargo,Warehouse,Outbound Logistics,Export Logistics,Mechanical
+Logistics,Store Keeper/Warehouse Assistant,"Supply Chain , Logistics , Purchase , Materials","Recruitment, Staffing",Excel,Reconciliation,Logistics,Logistics Executive,Leasing
+Logistics,Logistics Executive,Purchase / Logistics / Supply Chain,"Recruitment, Staffing",Freight,Forecasting,Supply Chain Management,Logistics,Transporters
+Logistics,Logistics Executive,Purchase / Logistics / Supply Chain,"Recruitment, Staffing",Depot,Monitoring,Product Planning,Showroom,Packaging
+Logistics,Logistics Executive,Purchase / Logistics / Supply Chain,"Automobile, Auto Anciliary, Auto Components",Procurement,Purchase Order,Production Planning,Planning,Material Requirement
+Logistics,Logistics Executive,Purchase / Logistics / Supply Chain,"It-Software, Software Services",Customer Profiling,Market Research,Distributors,Marketing Executive,Sales Executive
+Logistics,Warehouse Manager,Purchase / Logistics / Supply Chain,"Internet, Ecommerce",Logistics Operations,Supply Chain Operations,Warehouse,Logistics,Supply Chain
+Logistics,Warehouse Manager,Purchase / Logistics / Supply Chain,"Recruitment, Staffing",Transportation,Logistics Management,3Pl,Order Fulfillment,Inventory Management
+Logistics,Warehouse Manager,Purchase / Logistics / Supply Chain,"Recruitment, Staffing",Logistics Operations,Supply Chain,Customer Service,Customer Support,Warehouse Operations
+Logistics,Logistics Executive,"Supply Chain , Logistics , Purchase , Materials","Fmcg, Foods, Beverage",Process Orientation,New Business Development,Production Scheduling,Analytical Skills,Operations Management
+Logistics,Store Keeper/Warehouse Assistant,Purchase / Logistics / Supply Chain,"Recruitment, Staffing",Packaging,Consultancy,Electroplating,Sec,Supervision
+Logistics,Warehouse Manager,Purchase / Logistics / Supply Chain,"Retail, Wholesale",Transportation,Warehouse Management,Stock Control,Receiving,Outbound
+Logistics,Warehouse Manager,Purchase / Logistics / Supply Chain,"Retail, Wholesale",Logistics,Inventory Management,Supply Chain,Warehouse Operations,Material Management
+Logistics,Store Keeper/Warehouse Assistant,Purchase / Logistics / Supply Chain,"Recruitment, Staffing",Asset Management,Customer Service,Customer Relationship,Vendor Management,Help Desk
+Logistics,Store Keeper/Warehouse Assistant,Purchase / Logistics / Supply Chain,"Courier, Transportation, Freight , Warehousing",3Pl,Store Supervision,Vendor Management,Warehouse,Logistics
+Logistics,Store Keeper/Warehouse Assistant,Purchase / Logistics / Supply Chain,"Internet, Ecommerce",Furniture,Kaizen Implementation,Warehouse Operations,Outbound Process,Six Sigma
+Logistics,Store Keeper/Warehouse Assistant,Purchase / Logistics / Supply Chain,"Internet, Ecommerce",Home Appliances,Appliances,Electronics,Large,Logistics
+Logistics,Store Keeper/Warehouse Assistant,Purchase / Logistics / Supply Chain,"Internet, Ecommerce",Consumer Electronics,Apparel,Outbound,5S System,Warehouse Management
+Logistics,Store Keeper/Warehouse Assistant,Purchase / Logistics / Supply Chain,"Construction, Engineering, Cement, Metals",Logistics Management,Production Planning,Inventory Management,Procurement,Admin
+Logistics,Store Keeper/Warehouse Assistant,"Supply Chain , Logistics , Purchase , Materials","Courier, Transportation, Freight , Warehousing",Excel,Sap Is,Physical Verification,Warehouse,Logistics
+Logistics,Store Keeper/Warehouse Assistant,"Supply Chain , Logistics , Purchase , Materials","Courier, Transportation, Freight , Warehousing",Grn,Supply Chain Solutions,Invoicing,Delivery Challan,Data Entry Operation
+Logistics,Store Keeper/Warehouse Assistant,"Supply Chain , Logistics , Purchase , Materials","Courier, Transportation, Freight , Warehousing",Manpower Handling,Inventory Management,Daily Operations,Shift Management,Inbound
+Logistics,Logistics Manager,"Supply Chain , Logistics , Purchase , Materials","Courier, Transportation, Freight , Warehousing",Operations,Productivity Improvement,Ocean Freight,Continuous Improvement,Problem Solving
+Logistics,Logistics Manager,"Supply Chain , Logistics , Purchase , Materials","Courier, Transportation, Freight , Warehousing",Air Freight,Data Quality,Process Re - Engineering,Project Management,Process Automation
+Logistics,Logistics Executive,"Supply Chain , Logistics , Purchase , Materials","Recruitment, Staffing",Schedule,Talent,Analytical,English,Calculation
+Logistics,Logistics Executive,"Supply Chain , Logistics , Purchase , Materials","Recruitment, Staffing",Com,Logistics Executive,Tally Erp,Logistics Operations,Email
+Logistics,Store Keeper/Warehouse Assistant,Purchase / Logistics / Supply Chain,"Real Estate, Property",Mrn,Store Management,Material Planning,Inventory Management,Erp System
+Logistics,Logistics Executive,Purchase / Logistics / Supply Chain,"Construction, Engineering, Cement, Metals",Factory,Manufacturing,Dispatch,Production,Stores
+Logistics,Warehouse Manager,Purchase / Logistics / Supply Chain,"Recruitment, Staffing",Warehouse,Transporters,English Language,Business Executive,Com
+Logistics,Warehouse Manager,Purchase / Logistics / Supply Chain,"Recruitment, Staffing",Presentation,Sales Coordinator,Typing,Payment Followup,Email
+Logistics,Transport/Distribution Manager,"Supply Chain , Logistics , Purchase , Materials","Courier, Transportation, Freight , Warehousing",Transport Management System,Transport Executive,Mis Reporting,Transportation,Fleet Management
+Marketing,Direct Marketing Executive,"Marketing , Advertising , Mr , Pr , Media Planning","It-Software, Software Services",Marketing Executive,Customer,Relationships,Company,Implementation
+Marketing,Product/Brand Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Fmcg, Foods, Beverage",Operations,Performance Appraisal,Recruitment,Strategic Partnerships,Brand Marketing
+Marketing,Product/Brand Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Fmcg, Foods, Beverage",Consumer Insights,Marketing Strategy,Promotional Strategies,Brand Management,Customer Segmentation
+Marketing,Product/Brand Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Banking, Financial Services, Broking",Tsm,Market Research,Asm,Product Pricing,User Experience
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning",Other,Seo,Content Management,Digital Marketing,Content Marketing,Social Media
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","It-Software, Software Services",Engineering Services,Design Engineering,Die Casting,Min,Product Design
+Marketing,Product/Brand Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Banking, Financial Services, Broking",Customer Engagement,Business Analytics,Customer Service,Market Risk,Legal Compliance
+Marketing,Product/Brand Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Banking, Financial Services, Broking",Branch Banking,Automation,Customer Experience,Outsourcing,Process Re-Engineering
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Internet, Ecommerce",Customer Profiling,Market Research,Distributors,Marketing Executive,Sales Executive
+Marketing,Product/Brand Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Education, Teaching, Training",Top,Dermatology,Business Executive,Product Management,Pharma
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Internet, Ecommerce",Brand Awareness,Ppc,Digital Marketing,Email Marketing,Seo
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Internet, Ecommerce",Facebook,Mobile Marketing,Social Media,Linkedin,Analytics
+Marketing,Corporate Communication Executive,"Marketing , Advertising , Mr , Pr , Media Planning","It-Software, Software Services",Graphics,Offline Marketing,Relationship Building,Digital Marketing,Seo
+Marketing,Corporate Communication Executive,"Marketing , Advertising , Mr , Pr , Media Planning","It-Software, Software Services",Ms Office,Google Analytics,Social Media,Marketing Executive,Conceptualization
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Internet, Ecommerce",Operations,Analytical,Consumer Marketing,Outbound,Brand Building
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Internet, Ecommerce",Market Assessment,Marketing Strategy,Integrated Marketing,International Marketing,Analytics
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","It-Software, Software Services",Advertising,Sem,Adwords,Content Marketing,Seo
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Textiles, Garments, Accessories",Marketing Operations,Marketing Campaigns,Digital Marketing,Crm,Analytics
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Internet, Ecommerce",Brand Marketing,Research Analysis,Marketing Communication,Monitoring,Microsoft
+Marketing,Direct Marketing Executive,"Marketing , Advertising , Mr , Pr , Media Planning","It-Software, Software Services",Seo Analysis,Content Writing,Campaigns,Digital Marketing,Online Marketing
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","It-Software, Software Services",Social Media Marketing,Seo,Email,Sem,Ideation
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","It-Software, Software Services",Analytics,Website,Digital Marketing,Google Analytics,Sms
+Marketing,Assistant / Associate Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Advertising, Pr, Mr, Event Management",Executive Assistant,Personal Assistant,Secretary,Marketing Analyst,Marketing Research
+Marketing,Product/Brand Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Travel , Hotels , Restaurants , Airlines , Railways",Customer Profiling,Market Research,Distributors,Sales Executive,Marketing Executive
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Automobile, Auto Anciliary, Auto Components",Engineering Services,Die Casting,Min,Product Design,Automobile
+Marketing,Direct Marketing Executive,"Marketing , Advertising , Mr , Pr , Media Planning","It-Software, Software Services",H,Queries,Marketing Strategies,Sales Strategies,Le
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Industrial Products, Heavy Machinery",Operations,Field Marketing,Product Marketing,Field Sales,Logistics
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Industrial Products, Heavy Machinery",Sales Process,Ms Office,Market Development,Event Management,Product Launch
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Recruitment, Staffing",Display Advertising,Analytical,Sem,Media Planning,Strategic Planning
+Marketing,Marketing Manager,"Marketing , Advertising , Mr , Pr , Media Planning","Recruitment, Staffing",Marketing Campaigns,Product Management,Customer Experience,Seo,Social Media
