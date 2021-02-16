@@ -27,7 +27,7 @@ def industry_info(industry):
 
 
 def func_area_info(industry, functional_area):
-    data = pd.read_csv(BASE_DIR + "/Alt_Career/job_dataset.csv")
+    data = pd.read_csv(BASE_DIR + "/Alt_Career/csv/job_dataset.csv")
     sk_col = ["Skill1","Skill2","Skill3","Skill4","Skill5"]
     data_indfunc = data[(data['Industry'] == industry) & (data['Functional Area'] == functional_area)]
     info_dct = {}

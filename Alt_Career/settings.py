@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-import json_tag
 
 # Application definition
 
@@ -38,8 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Alt_Career',
-    'json_tag'
+    'Alt_Career'
 ]
 
 MIDDLEWARE = [
@@ -54,18 +52,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Alt_Career.urls'
 
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-
 TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.jinja2.Jinja2',
-        'DIRS': ['%s/templates/jinja2/' % (PROJECT_DIR),
-                 '%s/templates/jinja2/components' % (PROJECT_DIR)],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'autoescape': False
-        },
-    },
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
@@ -79,20 +66,6 @@ TEMPLATES = [
             ],
         },
     },
-
-    # {
-    #     'BACKEND': 'django.template.backends.jinja2.Jinja2',
-    #     'DIRS': [os.path.join(BASE_DIR, 'templates')],
-    #     'APP_DIRS': True,
-    #     'OPTIONS': {
-    #         'context_processors': [
-    #             'django.template.context_processors.debug',
-    #             'django.template.context_processors.request',
-    #             'django.contrib.auth.context_processors.auth',
-    #             'django.contrib.messages.context_processors.messages',
-    #         ],
-    #     },
-    # },
 ]
 
 WSGI_APPLICATION = 'Alt_Career.wsgi.application'

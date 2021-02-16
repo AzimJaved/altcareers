@@ -20,12 +20,12 @@
       {% csrf_token %}
       <div>
         {% include './components/industry.html' %}
-        {% include './components/functionalArea.html' %}
-        {% include './components/skill1.html' %}
-        {% include './components/skill2.html' %}
-        {% include './components/skill3.html' %}
-        {% include './components/skill4.html' %}
-        {% include './components/skill5.html' %}
+        {% include 'components/functionalArea.html' %}
+        {% include 'components/skill1.html' %}
+        {% include 'components/skill2.html' %}
+        {% include 'components/skill3.html' %}
+        {% include 'components/skill4.html' %}
+        {% include 'components/skill5.html' %}
         <button type="button" class="registerbtn" onclick="validateForm()">Predict</button>
       </div>
     </form>

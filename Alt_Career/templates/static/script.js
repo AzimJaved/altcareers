@@ -101,7 +101,7 @@ function validateForm() {
 function populateSelect() {
     let options = ""
     let selectIndustry = document.getElementById('industry')
-    industry.forEach(option => {
+    options.forEach(option => {
         let optionHTML = `<option value="${option}">${option}</option>\n`
         options += optionHTML;
     });
