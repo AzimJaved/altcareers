@@ -1,0 +1,54 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 120%;
+  line-height: 1.4;
+  margin: 0 auto;
+  padding: 2em;
+  background-image: url('bkgd.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.list {
+  width: 20em;
+  height: 1.5em;
+  font-size: 1.2em;
+}
+
+.data-list {
+  width: 20em;
+  height: 1.5em;
+  font-size: 1em;
+}
+
+.data-list {
+  font-size: 1.2em;
+}
+
+.registerbtn {
+  background-color: #ff0000;
+  color: white;
+  padding: 16px 35px;
+  margin: auto;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  width: 45%;
+  opacity: 0.9;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+.error {
+  border: solid 1px red;
+}

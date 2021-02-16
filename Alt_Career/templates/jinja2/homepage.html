@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Career Planning</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div style="margin-left:auto; margin-right:auto;">
+      <h1 style="text-align:center;">GetBoarded on Success</h1>
+      <h4 style="text-align:center;">Job Role Recommender and Job Readiness Calculator</h4>
+      <hr>
+    </div>
+    
+    <form action="/" id="job-form" method="POST">
+      <div>
+        {% include './components/industry.html' %}
+        {% include './components/functionalArea.html' %}
+        {% include './components/skill1.html' %}
+        {% include './components/skill2.html' %}
+        {% include './components/skill3.html' %}
+        {% include './components/skill4.html' %}
+        {% include './components/skill5.html' %}
+        <button type="button" class="registerbtn" onclick="validateForm()">Predict</button>
+      </div>
+    </form>
+    <div style="margin-left:auto; margin-right:auto;">
+      <hr>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+
+</html>

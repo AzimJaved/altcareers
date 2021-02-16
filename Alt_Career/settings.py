@@ -54,8 +54,15 @@ ROOT_URLCONF = 'Alt_Career.urls'
 
 TEMPLATES = [
     {
+        'BACKEND': 'django.template.backends.jinja2.Jinja2',
+        'DIRS': ['/templates/jinja2/'],
+        'OPTIONS': {
+            'environment': "Alt_Career.jinja2.environment",
+        },
+    },
+    {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/templates/admin'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
