@@ -1,5 +1,4 @@
 import pandas as pd
-
 from .settings import BASE_URL, BASE_DIR
 data = pd.read_csv(BASE_DIR + "/Alt_Career/csv/clean.csv")
 

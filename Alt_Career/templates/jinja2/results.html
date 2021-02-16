@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+    {% load json_tag %}
 <head>
     <meta charset="UTF-8">
     <title>Result</title>
@@ -17,7 +17,7 @@
 
         {% if sen|length != 0 %}
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        {% for i,j,k in itertools.zip_longest(sen, tab, range(0, sen|length)) %}
+        {% for i,j,k in sen_tab %}
         <script type="text/javascript">
             var ref = document.createElement('div')
             ref.id = 'prediction{{k}}'
@@ -29,7 +29,7 @@
                 data.addColumn('string', 'From');
                 data.addColumn('string', 'To');
                 data.addColumn('number', 'Weight');
-                data.addRows(JSON.parse(`{{ i|tojson }}`));
+                data.addRows(JSON.parse(`{{ i|json }}`));
 
                 // Set chart options
                 var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
@@ -67,7 +67,7 @@
                 data.addColumn('boolean', 'Ready');
                 data.addColumn('boolean', 'Short-Term');
                 data.addColumn('boolean', 'Long-Term');
-                data.addRows(JSON.parse(`{{ j|tojson }}`));
+                data.addRows(JSON.parse(`{{ j|json }}`));
 
                 var options = {
                     showRowNumber: false,

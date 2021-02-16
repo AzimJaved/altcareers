@@ -1,13 +1,15 @@
 from Alt_Career.settings import BASE_DIR
 from rest_framework.views import APIView
 from .options1 import industry_info, func_area_info
+import os
 
 from django.http import HttpResponse
 from django.template import loader
+from django.shortcuts import render
 import itertools
 import pandas as pd
 import jsonify
-from .dataprep import ind_dct, fun_dct, skill_dct, rolcat_dct, role_dct
+from .datapreptest import ind_dct, fun_dct, skill_dct, rolcat_dct, role_dct
 
 
 def readiness(x, sk_inp):
@@ -46,10 +48,11 @@ class options_func(APIView):
 
 
 def home(request):
-    template = loader.get_template('jinja2/homepage.html')
+    template = loader.get_template(os.path.join(BASE_DIR, 'Alt_Career', 'templates', 'jinja2', 'homepage.html'))
     context = {
         'latest_question_list': '',
     }
+    # return render(request,'jinja2/homepage.html')
     return HttpResponse(template.render(context))
 
 
@@ -169,4 +172,4 @@ def result(request):
         table = json.dumps(ready)
         '''
         template = loader.get_template('jinja2/results.html')
-        return HttpResponse(template.render(request, {'sen': final, 'tab': ready, 'itertools': itertools, 'jsonify': jsonify}))
+        return HttpResponse(template.render({'sen': final, 'sen_tab': itertools.zip_longest(final, ready, range(0, len(final)))}))

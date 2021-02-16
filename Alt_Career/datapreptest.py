@@ -1,7 +1,7 @@
 
 import pandas as pd
-
-data = pd.read_csv('job_dataset_test.csv')
+from .settings import BASE_URL, BASE_DIR
+data = pd.read_csv(BASE_DIR + "/Alt_Career/csv/job_dataset_test.csv")
 
 data_enc = data.copy()
 
@@ -52,5 +52,5 @@ data_enc['Industry'] = data_enc['Industry'].replace(ind_dct)
 
 #data.to_csv(BASE_DIR + "/Alt_Career/csv/job_dataset.csv", index=False, header=True)
 
-data_enc.to_csv(BASE_DIR + "/Alt_Career/csv/job_dataset_encoded.csv",
+data_enc.to_csv(BASE_DIR + "/Alt_Career/csv/job_dataset_test_encoded.csv",
                 index=False, header=True)
