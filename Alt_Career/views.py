@@ -56,7 +56,7 @@ def home(request):
 def result(request):
     if (request.method == 'POST'):
         data = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset.csv')
-        data_enc = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset.csv')
+        data_enc = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset_encoded.csv')
         ind_ = request.POST.get('industry')
         f_area_ = request.POST.get('functionalArea')
         sk1_ = request.POST.get('skill1')
@@ -79,7 +79,7 @@ def result(request):
                        'Skill1', 'Skill2', 'Skill3', 'Skill4', 'Skill5']]
         from sklearn.model_selection import train_test_split
         X_train, X_test, y_train, y_test = train_test_split(
-            X, y, train_size=0.8, random_state=42)
+            X, y, train_size=0.8, test_size=0.2, random_state=42)
         from sklearn.metrics import classification_report, f1_score, accuracy_score, confusion_matrix, precision_score, recall_score
         from sklearn.ensemble import RandomForestClassifier
 
