@@ -79,7 +79,7 @@ def result(request):
                        'Skill1', 'Skill2', 'Skill3', 'Skill4', 'Skill5']]
         from sklearn.model_selection import train_test_split
         X_train, X_test, y_train, y_test = train_test_split(
-            X, y, train_size=1.0, random_state=42)
+            X, y, test_size=0.1, random_state=42)
         from sklearn.metrics import classification_report, f1_score, accuracy_score, confusion_matrix, precision_score, recall_score
         from sklearn.ensemble import RandomForestClassifier
 
