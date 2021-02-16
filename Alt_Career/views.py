@@ -79,14 +79,14 @@ def result(request):
                        'Skill1', 'Skill2', 'Skill3', 'Skill4', 'Skill5']]
         from sklearn.model_selection import train_test_split
         X_train, X_test, y_train, y_test = train_test_split(
-            X, y, test_size=0.3, random_state=42)
+            X, y, train_size=0.8, random_state=42)
         from sklearn.metrics import classification_report, f1_score, accuracy_score, confusion_matrix, precision_score, recall_score
         from sklearn.ensemble import RandomForestClassifier
 
         forest = RandomForestClassifier()
         forest.fit(X_train, y_train)
 
-        y_pred = forest.predict(X_test)
+        #y_pred = forest.predict(X_test)
 
         predicted_rolecat = []
 
