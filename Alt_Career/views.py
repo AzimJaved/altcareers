@@ -1,3 +1,4 @@
+from Alt_Career.settings import BASE_DIR
 from rest_framework.views import APIView
 from .options1 import industry_info, func_area_info
 
@@ -54,15 +55,15 @@ def home(request):
 
 def result(request):
     if (request.method == 'POST'):
-        data = pd.read_csv('job_dataset.csv')
-        data_enc = pd.read_csv('job_dataset_encoded.csv')
-        ind_ = request.form['industry']
-        f_area_ = request.form['functionalArea']
-        sk1_ = request.form['skill1']
-        sk2_ = request.form['skill2']
-        sk3_ = request.form['skill3']
-        sk4_ = request.form['skill4']
-        sk5_ = request.form['skill5']
+        data = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset.csv')
+        data_enc = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset.csv')
+        ind_ = request.POST.get('industry')
+        f_area_ = request.POST.get('functionalArea')
+        sk1_ = request.POST.get('skill1')
+        sk2_ = request.POST.get('skill2')
+        sk3_ = request.POST.get('skill3')
+        sk4_ = request.POST.get('skill4')
+        sk5_ = request.POST.get('skill5')
         ind = ind_dct[ind_]
         f_area = fun_dct[f_area_]
         sk1 = skill_dct[sk1_]
