@@ -12,7 +12,7 @@ def industry_info(industry):
     import pandas as pd
     #inds = str(industry)
     #print(industry)
-    data = pd.read_csv(BASE_DIR + "/Alt_Career/job_dataset.csv")
+    data = pd.read_csv(BASE_DIR + "/Alt_Career/csv/job_dataset.csv")
     #print(data.head())
     #data_ind = data[data['Industry'] == industry]
     opt = [industry]

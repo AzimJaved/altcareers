@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 
 <head>
   <meta charset="UTF-8">
@@ -8,14 +9,13 @@
 </head>
 
 <body>
-
   <div class="container">
     <div style="margin-left:auto; margin-right:auto;">
       <h1 style="text-align:center;">GetBoarded on Success</h1>
       <h4 style="text-align:center;">Job Role Recommender and Job Readiness Calculator</h4>
       <hr>
     </div>
-    
+
     <form action="/" id="job-form" method="POST">
       <div>
         {% include './components/industry.html' %}

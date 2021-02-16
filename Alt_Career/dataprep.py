@@ -1,7 +1,7 @@
 import pandas as pd
 
 from .settings import BASE_URL, BASE_DIR
-data = pd.read_csv(BASE_DIR + "/Alt_Career/clean.csv")
+data = pd.read_csv(BASE_DIR + "/Alt_Career/csv/clean.csv")
 
 for col in ['skill1', 'skill2', 'skill3', 'skill4', 'skill5']:
     n = []
@@ -182,7 +182,7 @@ for i, val in enumerate(industry):
 data_enc['Industry'] = data_enc['Industry'].replace(ind_dct)
 #set_ind = list(set(industry))
 
-data.to_csv(BASE_DIR + "/Alt_Career/job_dataset.csv", index=False, header=True)
+data.to_csv(BASE_DIR + "/Alt_Career/csv/job_dataset.csv", index=False, header=True)
 
-data_enc.to_csv(BASE_DIR + "/Alt_Career/job_dataset_encoded.csv",
+data_enc.to_csv(BASE_DIR + "/Alt_Career/csv/job_dataset_encoded.csv",
                 index=False, header=True)

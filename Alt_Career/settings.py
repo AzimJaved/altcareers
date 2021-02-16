@@ -55,14 +55,7 @@ ROOT_URLCONF = 'Alt_Career.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.jinja2.Jinja2',
-        'DIRS': ['/templates/jinja2/'],
-        'OPTIONS': {
-            'environment': "Alt_Career.jinja2.environment",
-        },
-    },
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/templates/admin'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates', 'jinja2')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -73,6 +66,19 @@ TEMPLATES = [
             ],
         },
     },
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    }
 ]
 
 WSGI_APPLICATION = 'Alt_Career.wsgi.application'
