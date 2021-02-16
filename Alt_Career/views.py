@@ -168,5 +168,4 @@ def result(request):
         table = json.dumps(ready)
         '''
         template = loader.get_template('jinja2/results.html')
-        return HttpResponse(template.render({'sen': final, 'tab': ready, 'itertools': itertools, 'jsonify': jsonify}))
-        # return render_template('results.html', sen=final, tab=ready, itertools=itertools, jsonify=jsonify)
+        return HttpResponse(template.render(request, {'sen': final, 'tab': ready, 'itertools': itertools, 'jsonify': jsonify}))

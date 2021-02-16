@@ -16,7 +16,8 @@
       <hr>
     </div>
 
-    <form action="/" id="job-form" method="POST">
+    <form action="/recommend/" id="job-form" method="POST">
+      {% csrf_token %}
       <div>
         {% include './components/industry.html' %}
         {% include './components/functionalArea.html' %}
