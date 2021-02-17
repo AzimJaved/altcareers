@@ -74,14 +74,18 @@ def result(request):
         y = data_test['Role Category']
         X = data_test[['Industry', 'Functional Area',
                        'Skill1', 'Skill2', 'Skill3', 'Skill4', 'Skill5']]
-        from sklearn.model_selection import train_test_split
-        X_train, X_test, y_train, y_test = train_test_split(
-            X, y, train_size=0.8, test_size=0.2, random_state=42)
+        
         from sklearn.metrics import classification_report, f1_score, accuracy_score, confusion_matrix, precision_score, recall_score
         from sklearn.ensemble import RandomForestClassifier
-
-        forest = RandomForestClassifier()
-        forest.fit(X_train, y_train)
+        if len(data_test) > 10:
+            from sklearn.model_selection import train_test_split
+            X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, test_size=0.2, random_state=42)
+            forest = RandomForestClassifier()
+            forest.fit(X_train, y_train)
+        
+        else:
+            forest = RandomForestClassifier()
+            forest.fit(X, y)
 
         #y_pred = forest.predict(X_test)
 
@@ -120,6 +124,7 @@ def result(request):
         predicted_rolecat = list(set(fin))
         final = []
         ready = []
+        
         sk_inp = [sk1_, sk2_, sk3_, sk4_, sk5_]
         # print(predicted_rolecat)
         if len(predicted_rolecat) > 0:
@@ -130,6 +135,7 @@ def result(request):
                 role_lt = []
                 intermed = []
                 d1 = []
+                cycle = []
                 role_lt = list(set(list(data2['Role'].values)))
                 for role in role_lt:
                     intermed.append([rol_cat, role, 5])
@@ -153,7 +159,9 @@ def result(request):
                     d1.append(d)
                     top_skill = b[0:10]
                     for sk in top_skill:
-                        intermed.append([role, sk, 5])
+                        if sk not in cycle:
+                            intermed.append([role, sk, 5])
+                    cycle.extend(list(set(top_skill)))
                 ready.append(d1)
                 final.append(intermed)
 
