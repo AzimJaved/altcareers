@@ -11,17 +11,17 @@
                 fetch(`/func?industry=${industry}&functional_area=${fArea}`)
                     .then(response => response.json())
                     .then(data => {
-                        console.log(data)
+
                         populateSelect('skill1-datalist', data['data'][fArea]['Skill1'])
-                        document.getElementById('skill1-list').innerHTML = JSON.stringify(['data'][fArea]['Skill1']);
+                        document.getElementById('skill1-list').innerHTML = JSON.stringify(data['data'][fArea]['Skill1']);
                         populateSelect('skill2-datalist', data['data'][fArea]['Skill2'])
-                        document.getElementById('skill2-list').innerHTML = JSON.stringify(['data'][fArea]['Skill2']);
+                        document.getElementById('skill2-list').innerHTML = JSON.stringify(data['data'][fArea]['Skill2']);
                         populateSelect('skill3-datalist', data['data'][fArea]['Skill3'])
-                        document.getElementById('skill3-list').innerHTML = JSON.stringify(['data'][fArea]['Skill3']);
+                        document.getElementById('skill3-list').innerHTML = JSON.stringify(data['data'][fArea]['Skill3']);
                         populateSelect('skill4-datalist', data['data'][fArea]['Skill4'])
-                        document.getElementById('skill4-list').innerHTML = JSON.stringify(['data'][fArea]['Skill4']);
+                        document.getElementById('skill4-list').innerHTML = JSON.stringify(data['data'][fArea]['Skill4']);
                         populateSelect('skill5-datalist', data['data'][fArea]['Skill5'])
-                        document.getElementById('skill5-list').innerHTML = JSON.stringify(['data'][fArea]['Skill5']);
+                        document.getElementById('skill5-list').innerHTML = JSON.stringify(data['data'][fArea]['Skill5']);
                     })
             }
         }
@@ -30,7 +30,7 @@
     <label style="width: 30%" for="functionalArea">Functional Area</label>
     <div style="padding-left: 1em; width: 40%">
         <input class="list" list="functionalArea-datalist" id="functionalArea-choice" onBlur="loadSkills(event)"
-            name="functionalArea"></input>
+            name="functionalArea" autocomplete="off"></input>
         <datalist class="data-list" id="functionalArea-datalist" theme="light" placeholder="Choose one"
             data-search="true">
 
