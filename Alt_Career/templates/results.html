@@ -20,78 +20,98 @@
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         {% for i,j,k in sen_tab %}
         <script type="text/javascript">
-            var ref = document.createElement('div')
-            ref.id = 'prediction{{k}}'
-            ref.classList = ['prediction']
-            document.getElementById('container').appendChild(ref);
-            google.charts.load("current", { packages: ["sankey", "table"] });
-            google.charts.setOnLoadCallback(drawChart);
-            function drawChart() {
-                var data = new google.visualization.DataTable();
-                data.addColumn('string', 'From');
-                data.addColumn('string', 'To');
-                data.addColumn('number', 'Weight');
-                data.addRows(JSON.parse(`{{ i|json }}`));
+            async function loadCharts() {
+                var ref = document.createElement('div')
+                ref.id = 'prediction{{k}}'
+                ref.classList = ['prediction']
+                document.getElementById('container').appendChild(ref);
+                google.charts.load("current", {
+                    packages: ["sankey", "table"]
+                });
+                google.charts.setOnLoadCallback(drawChart);
 
-                // Set chart options
-                var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
-                    '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
-                var options = {
-                    width: 800,
-                    height: 600,
-                    sankey: {
-                        link: { colorMode: 'gradient', color: { stroke: 'white', strokeWidth: 0.1 } },
-                        node: {
-                            width: 20, colors: colors, labelPadding: 30, nodePadding: 40,
-                            label: {
-                                color: '#01070a',
-                                fontName: 'Times-Roman',
-                                fontSize: 15,
-                                bold: true,
-                                italic: true,
-                                trigger: 'none',
+                function drawChart() {
+                    var data = new google.visualization.DataTable();
+                    data.addColumn('string', 'From');
+                    data.addColumn('string', 'To');
+                    data.addColumn('number', 'Weight');
+                    data.addRows(JSON.parse(`{{ i|json }}`));
+
+                    // Set chart options
+                    var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
+                        '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'
+                    ];
+                    var options = {
+                        width: 800,
+                        height: 600,
+                        sankey: {
+                            link: {
+                                colorMode: 'gradient',
+                                color: {
+                                    stroke: 'white',
+                                    strokeWidth: 0.1
+                                }
+                            },
+                            node: {
+                                width: 20,
+                                colors: colors,
+                                labelPadding: 30,
+                                nodePadding: 40,
+                                label: {
+                                    color: '#01070a',
+                                    fontName: 'Times-Roman',
+                                    fontSize: 15,
+                                    bold: true,
+                                    italic: true,
+                                    trigger: 'none',
+                                }
                             }
-                        }
-                    },
-                };
+                        },
+                    };
+                    ref = document.createElement('div')
+                    ref.id = 'sankey_multiple{{k}}'
+                    ref.classList = ['sankey']
+                    document.getElementById('prediction{{k}}').appendChild(ref)
+                    var chart = new google.visualization.Sankey(ref);
+                    google.visualization.events.addListener(chart, 'error', (err) => {
+                        document.getElementById('prediction{{k}}').innerHTML = "Sorry, Sankey diagram for your jobrole could not be made"
 
-                // Instantiate and draw our chart, passing in some options.
-                ref = document.createElement('div')
-                ref.id = 'sankey_multiple{{k}}'
-                ref.classList = ['sankey']
-                document.getElementById('prediction{{k}}').appendChild(ref)
-                var chart = new google.visualization.Sankey(ref);
-                chart.draw(data, options);
+                    })
+                    chart.draw(data, options);
+                }
+
+                function drawChart2() {
+                    var data = new google.visualization.DataTable();
+                    data.addColumn('string', 'Job Role');
+                    data.addColumn('boolean', 'Ready');
+                    data.addColumn('boolean', 'Short-Term');
+                    data.addColumn('boolean', 'Long-Term');
+                    data.addRows(JSON.parse(`{{ j|json }}`));
+
+                    var options = {
+                        showRowNumber: false,
+                        width: '100%',
+                        height: '100%',
+                        trigger: 'none',
+                    };
+
+                    // Instantiate and draw the chart.
+                    ref = document.createElement('div')
+                    ref.id = 'table-container{{k}}'
+                    ref.classList = ['table']
+                    document.getElementById('prediction{{k}}').appendChild(ref)
+                    var chart = new google.visualization.Table(ref);
+                    google.visualization.events.addListener(chart, 'error', (err) => {
+                        document.getElementById('prediction{{k}}').innerHTML = "Sorry, No job role could be predicted"
+
+                    })
+                    chart.draw(data, options);
+                }
+                google.charts.setOnLoadCallback(drawChart2);
             }
-
-            function drawChart2() {
-                // Define the chart to be drawn.
-                var data = new google.visualization.DataTable();
-                data.addColumn('string', 'Job Role');
-                data.addColumn('boolean', 'Ready');
-                data.addColumn('boolean', 'Short-Term');
-                data.addColumn('boolean', 'Long-Term');
-                data.addRows(JSON.parse(`{{ j|json }}`));
-
-                var options = {
-                    showRowNumber: false,
-                    width: '100%',
-                    height: '100%',
-                    trigger: 'none',
-                };
-
-                // Instantiate and draw the chart.
-                ref = document.createElement('div')
-                ref.id = 'table-container{{k}}'
-                ref.classList = ['table']
-                document.getElementById('prediction{{k}}').appendChild(ref)
-                var chart = new google.visualization.Table(ref);
-                chart.draw(data, options);
-            }
-            google.charts.setOnLoadCallback(drawChart2);
+            loadCharts();
         </script>
-        {% endfor %}
-        {% else %}
+        {% endfor %} {% else %}
         <p>"Sorry! No job role could be predicted"</p>
         {% endif %}
     </div>
