@@ -9,7 +9,7 @@ from django.shortcuts import render
 import itertools
 import pandas as pd
 import jsonify
-from .datapreptest import ind_dct, fun_dct, skill_dct, rolcat_dct, role_dct
+from .dataprep import ind_dct, fun_dct, skill_dct, rolcat_dct, role_dct
 
 
 def readiness(x, sk_inp):
@@ -51,9 +51,9 @@ def home(request):
 
 def result(request):
     if (request.method == 'POST'):
-        data = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset_test.csv')
+        data = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset.csv')
         data_enc = pd.read_csv(
-            BASE_DIR + '/Alt_Career/csv/job_dataset_test_encoded.csv')
+            BASE_DIR + '/Alt_Career/csv/job_dataset_encoded.csv')
         ind_ = request.POST.get('industry')
         f_area_ = request.POST.get('functionalArea')
         sk1_ = request.POST.get('skill1')
