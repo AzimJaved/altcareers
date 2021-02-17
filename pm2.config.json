@@ -1,0 +1,12 @@
+{
+    "apps": [{
+        "name": "AltCareers",
+        "script": "./manage.py",
+        "args": [
+            "runserver"
+        ],
+        "wait_ready": true,
+        "autorestart": true,
+        "max_restarts": 5
+    }]
+}
