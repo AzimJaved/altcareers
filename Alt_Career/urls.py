@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('industry/', options_industry.as_view()),
     path('func/', options_func.as_view()),
-    path('home/', home),
+    path('', home),
     path('recommend/', result)
 ]

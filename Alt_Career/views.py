@@ -9,7 +9,7 @@ from django.shortcuts import render
 import itertools
 import pandas as pd
 import jsonify
-from .dataprep import ind_dct, fun_dct, skill_dct, rolcat_dct, role_dct
+from .datapreptest import ind_dct, fun_dct, skill_dct, rolcat_dct, role_dct
 
 
 def readiness(x, sk_inp):

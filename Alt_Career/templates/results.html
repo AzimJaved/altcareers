@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    {% load json_tag %}
+{% load json_tag %}
+
 <head>
     <meta charset="UTF-8">
     <title>Result</title>
@@ -21,6 +22,7 @@
         <script type="text/javascript">
             var ref = document.createElement('div')
             ref.id = 'prediction{{k}}'
+            ref.classList = ['prediction']
             document.getElementById('container').appendChild(ref);
             google.charts.load("current", { packages: ["sankey", "table"] });
             google.charts.setOnLoadCallback(drawChart);
@@ -36,7 +38,7 @@
                     '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
                 var options = {
                     width: 800,
-                    height: 500,
+                    height: 600,
                     sankey: {
                         link: { colorMode: 'gradient', color: { stroke: 'white', strokeWidth: 0.1 } },
                         node: {
@@ -55,6 +57,7 @@
                 // Instantiate and draw our chart, passing in some options.
                 ref = document.createElement('div')
                 ref.id = 'sankey_multiple{{k}}'
+                ref.classList = ['sankey']
                 document.getElementById('prediction{{k}}').appendChild(ref)
                 var chart = new google.visualization.Sankey(ref);
                 chart.draw(data, options);
@@ -78,6 +81,7 @@
                 // Instantiate and draw the chart.
                 ref = document.createElement('div')
                 ref.id = 'table-container{{k}}'
+                ref.classList = ['table']
                 document.getElementById('prediction{{k}}').appendChild(ref)
                 var chart = new google.visualization.Table(ref);
                 chart.draw(data, options);
