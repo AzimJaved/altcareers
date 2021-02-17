@@ -54,7 +54,8 @@ def home(request):
 def result(request):
     if (request.method == 'POST'):
         data = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset_test.csv')
-        data_enc = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset_test_encoded.csv')
+        data_enc = pd.read_csv(
+            BASE_DIR + '/Alt_Career/csv/job_dataset_test_encoded.csv')
         ind_ = request.POST.get('industry')
         f_area_ = request.POST.get('functionalArea')
         sk1_ = request.POST.get('skill1')
@@ -166,6 +167,4 @@ def result(request):
         senkey = json.dumps(final)
         table = json.dumps(ready)
         '''
-        # template = loader.get_template('jinja2/results.html')
-        # return HttpResponse(template.render({'sen': final, 'sen_tab': itertools.zip_longest(final, ready, range(0, len(final)))}))
         return render(request, 'results.html', {'sen': final, 'sen_tab': itertools.zip_longest(final, ready, range(0, len(final)))})
