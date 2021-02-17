@@ -9,7 +9,7 @@ from django.shortcuts import render
 import itertools
 import pandas as pd
 import jsonify
-from .datapreptest import ind_dct, fun_dct, skill_dct, rolcat_dct, role_dct
+from .dataprep import ind_dct, fun_dct, skill_dct, rolcat_dct, role_dct
 
 
 def readiness(x, sk_inp):
@@ -35,7 +35,6 @@ def readiness(x, sk_inp):
 class options_industry(APIView):
     def get(self, request):
         data = request.GET.get('industry')
-        # print(data)
         return industry_info(data)
 
 
@@ -43,7 +42,6 @@ class options_func(APIView):
     def get(self, request):
         func = request.GET.get('industry')
         func_area = request.GET.get('functional_area')
-
         return func_area_info(func, func_area)
 
 
