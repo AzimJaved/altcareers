@@ -160,7 +160,8 @@ def result(request):
                     top_skill = b[0:10]
                     for sk in top_skill:
                         if sk not in cycle:
-                            intermed.append([role, sk, 5])
+                            unique = " " + str(sk) + " "
+                            intermed.append([role, unique, 5])
                     cycle.extend(list(set(top_skill)))
                 ready.append(d1)
                 final.append(intermed)
