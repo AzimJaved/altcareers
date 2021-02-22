@@ -2,7 +2,7 @@ from Alt_Career.settings import BASE_DIR
 from rest_framework.views import APIView
 from .options1 import industry_info, func_area_info
 import os
-
+import pickle
 from django.http import HttpResponse
 from django.template import loader
 from django.shortcuts import render
@@ -11,6 +11,7 @@ import pandas as pd
 import jsonify
 from .dataprep import ind_dct, fun_dct, skill_dct, rolcat_dct, role_dct
 
+forest = pickle.load(open(BASE_DIR + "/Alt_Career/csv/model.pkl",'rb'))
 
 def readiness(x, sk_inp):
     r = 0
@@ -52,8 +53,7 @@ def home(request):
 def result(request):
     if (request.method == 'POST'):
         data = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset.csv')
-        data_enc = pd.read_csv(
-            BASE_DIR + '/Alt_Career/csv/job_dataset_encoded.csv')
+        data_enc = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset_encoded.csv')
         ind_ = request.POST.get('industry')
         f_area_ = request.POST.get('functionalArea')
         sk1_ = request.POST.get('skill1')
@@ -68,27 +68,7 @@ def result(request):
         sk3 = skill_dct[sk3_]
         sk4 = skill_dct[sk4_]
         sk5 = skill_dct[sk5_]
-
-        data_test = data_enc[(data_enc['Industry'] == ind) & (
-            data_enc['Functional Area'] == f_area)]
-        y = data_test['Role Category']
-        X = data_test[['Industry', 'Functional Area',
-                       'Skill1', 'Skill2', 'Skill3', 'Skill4', 'Skill5']]
         
-        from sklearn.metrics import classification_report, f1_score, accuracy_score, confusion_matrix, precision_score, recall_score
-        from sklearn.ensemble import RandomForestClassifier
-        if len(data_test) > 10:
-            from sklearn.model_selection import train_test_split
-            X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, test_size=0.2, random_state=42)
-            forest = RandomForestClassifier()
-            forest.fit(X_train, y_train)
-        
-        else:
-            forest = RandomForestClassifier()
-            forest.fit(X, y)
-
-        #y_pred = forest.predict(X_test)
-
         predicted_rolecat = []
 
         test = ['Industry', 'Functional Area', 'Skill1',
@@ -124,46 +104,46 @@ def result(request):
         predicted_rolecat = list(set(fin))
         final = []
         ready = []
-        
         sk_inp = [sk1_, sk2_, sk3_, sk4_, sk5_]
         # print(predicted_rolecat)
         if len(predicted_rolecat) > 0:
             for rol_cat in predicted_rolecat:
-                data2 = data[(data['Role Category'] == rol_cat) & (
-                    data['Functional Area'] == f_area_) & (data['Industry'] == ind_)]
-                # display(data2)
+                data2 = data[(data['Role Category'] == rol_cat) & (data['Industry'] != ind_)]
+                #display(data2)
+                print(set(data2['Industry'].values))
+                ind_lt = list(set(data2['Industry'].values))
                 role_lt = []
                 intermed = []
                 d1 = []
-                cycle = []
-                role_lt = list(set(list(data2['Role'].values)))
-                for role in role_lt:
-                    intermed.append([rol_cat, role, 5])
-                for role in role_lt:
-                    data3 = data2[data2['Role'] == role]
-                    sc = ['Skill1', 'Skill2', 'Skill3', 'Skill4', 'Skill5']
-                    sk_dct = {}
-                    for c in sc:
-                        for skill in list(data3[c].values):
-                            sk_dct[skill] = sk_dct.get(skill, 0) + 1
-                    count = sk_dct.values()
-                    sort_dct = sorted(
-                        sk_dct.items(), key=lambda ele: ele[1], reverse=True)
-                    sort_skill = [x[0] for x in sort_dct]
-                    # print(sort_dct)
-                    if max(count) < 5:
-                        b = sort_skill[0:30]
-                    else:
-                        b = sort_skill[0:20]
-                    d = [role] + readiness(b, sk_inp)
-                    d1.append(d)
-                    top_skill = b[0:10]
-                    for sk in top_skill:
-                        if sk not in cycle:
+                for i in ind_lt:
+                    intermed.append([rol_cat,i,5])
+                for i in ind_lt:
+                    data2 = data2[data['Industry'] == i]
+                    role_lt = list(set(list(data2['Role'].values)))
+                    for role in role_lt:
+                        intermed.append([i, role, 5])
+                    for role in role_lt :
+                        data3 = data2[data2['Role'] == role]
+                        sc = ['Skill1','Skill2','Skill3','Skill4','Skill5']
+                        sk_dct = {}
+                        for c in sc:
+                            for skill in list(data3[c].values):
+                                sk_dct[skill] = sk_dct.get(skill, 0) + 1
+                        count = sk_dct.values()
+                        sort_dct = sorted(sk_dct.items(), key = lambda ele: ele[1], reverse = True)
+                        sort_skill = [x[0] for x in sort_dct]
+                        #print(sort_dct)
+                        if max(count) < 5:
+                            b = sort_skill[0:30]
+                        else:
+                            b = sort_skill[0:20]
+                        d = [role] + readiness(b, sk_inp)
+                        d1.append(d)
+                        top_skill = b[0:10]
+                        for sk in top_skill:
                             unique = " " + str(sk) + " "
                             intermed.append([role, unique, 5])
-                    cycle.extend(list(set(top_skill)))
-                ready.append(d1)
+                    ready.append(d1)
                 final.append(intermed)
 
         '''
@@ -174,4 +154,6 @@ def result(request):
         senkey = json.dumps(final)
         table = json.dumps(ready)
         '''
-        return render(request, 'results.html', {'sen': final, 'sen_tab': itertools.zip_longest(final, ready, range(0, len(final)))})
+        template = loader.get_template('jinja2/results.html')
+        return HttpResponse(template.render(request, {'sen': final, 'tab': ready, 'itertools': itertools, 'jsonify': jsonify}))
+
