@@ -1,4 +1,5 @@
 import pandas as pd
+
 from .settings import BASE_URL, BASE_DIR
 data = pd.read_csv(BASE_DIR + "/Alt_Career/csv/clean.csv")
 
@@ -65,60 +66,6 @@ data['Functional Area'] = data['Functional Area'].replace(
 data['Industry'] = data['Industry'].replace(['Accounting / Finance', 'Advertising / Pr / Mr / Event Management', 'Agriculture / Dairy', 'Automobile / Auto Anciliary / Auto Components', 'Aviation / Aerospace Firms', 'Banking / Financial Services / Broking', 'Bpo / Call Centre / Ites', 'Chemicals / Petrochemical / Plastic / Rubber', 'Construction / Engineering / Cement / Metals', 'Consumer Electronics / Appliances / Durables', 'Courier / Transportation / Freight / Warehousing', 'Education / Teaching / Training', 'Fmcg / Foods / Beverage', 'Gems / Jewellery', 'Glass / Glassware', 'Heat Ventilation / Air Conditioning', 'Industrial Products / Heavy Machinery', 'Internet / Ecommerce', 'It-Software / Software Services', 'Kpo / Research / Analytics', 'Media / Entertainment / Internet', 'Medical / Healthcare / Hospitals', 'Mining / Quarrying', 'Ngo / Social Services / Regulators / Industry Associations', 'Oil And Gas / Energy / Power / Infrastructure', 'Pharma / Biotech / Clinical Research', 'Real Estate / Property', 'Recruitment / Staffing', 'Retail / Wholesale', 'Semiconductors / Electronics', 'Strategy / Management Consulting Firms', 'Telecom / Isp', 'Textiles / Garments / Accessories',
                                              'Travel / Hotels / Restaurants / Airlines / Railways'], ['Accounting, Finance', 'Advertising, Pr, Mr, Event Management', 'Agriculture, Dairy', 'Automobile, Auto Anciliary, Auto Components', 'Aviation, Aerospace, Aeronautical', 'Banking, Financial Services, Broking', 'Bpo, Call Centre, Ites', 'Chemicals, Petrochemical, Plastic, Rubber', 'Construction, Engineering, Cement, Metals', 'Consumer Electronics, Appliances, Durables', 'Courier, Transportation, Freight , Warehousing', 'Education, Teaching, Training', 'Fmcg, Foods, Beverage', 'Gems, Jewellery', 'Glass, Glassware', 'Heat Ventilation, Air Conditioning', 'Industrial Products, Heavy Machinery', 'Internet, Ecommerce', 'It-Software, Software Services', 'Kpo, Research, Analytics', 'Media, Entertainment, Internet', 'Medical, Healthcare, Hospitals', 'Mining, Quarrying', 'Ngo, Social Services, Regulators, Industry Associations', 'Oil And Gas, Energy, Power, Infrastructure', 'Pharma, Biotech, Clinical Research', 'Real Estate, Property', 'Recruitment, Staffing', 'Retail, Wholesale', 'Semiconductors, Electronics', 'Strategy, Management Consulting Firms', 'Telcom, Isp', 'Textiles, Garments, Accessories', 'Travel , Hotels , Restaurants , Airlines , Railways'])
 
-'''
-sk_col = ['Skill1', 'Skill2', 'Skill3', 'Skill4', 'Skill5']
-s1 = list(data['Skill1'].values)
-s2 = list(data['Skill2'].values)
-s3 = list(data['Skill3'].values)
-s4 = list(data['Skill4'].values)
-s5 = list(data['Skill5'].values)
-
-m = s1+s2+s3+s4+s5
-set_m = list(set(m))
-l = [i for i in range(len(set_m))]
-skill_map = dict(zip(set_m,l))
-
-
-index = []
-for j in range(4):
-    set1 = set(m[j])
-    for k in range(j+1,5):
-        set2 = set(m[k])
-        s = list(set1 & set2)
-        #print(len(s))
-        index_names = data[data['Skill{}'.format(k+1)].isin(s)].index
-        index.extend(index_names)
-        #print(len(set(s1) & (set(s2))))
-index = list(set(index))
-index.sort(reverse=True)
-if len(index)>0:
-    data.drop(index, axis = 0, inplace=True)
-
-    for i in m[k]:
-        for j in range(k+1,5):
-            if i in m[j]:
-                ind = m[j].index(i)
-                ind = df[ (df['Skill{}'.format(j+1)] == i).index
-                #if m[k][ind] != m[j][ind]:
-                #    m[k][ind], m[j][ind] = m[j][ind], m[k][ind]
-
-
-data.drop(sk_col, axis=1, inplace=True)
-data['Skill1'] = m[0]
-data['Skill2'] = m[1]
-data['Skill3'] = m[2]
-data['Skill4'] = m[3]
-data['Skill5'] = m[4]
-
-set1 = set(s1)
-set2 = set(s2)
-s = list(set1 & set2)
-print(len(s))
-for ind, sk2 in enumerate(s2):
-    if (sk2 in s) and (s1[ind] != sk2):
-        s1[ind], s2[ind] = s2[ind], s1[ind]
-print(len(set(s1) & (set(s2))))
-'''
 
 data2 = data[data['Role Category'] == 'Programming & Design']
 data2 = data2.iloc[::2]
@@ -185,3 +132,26 @@ data.to_csv(BASE_DIR + "/Alt_Career/csv/job_dataset.csv", index=False, header=Tr
 
 data_enc.to_csv(BASE_DIR + "/Alt_Career/csv/job_dataset_encoded.csv",
                 index=False, header=True)
+
+y = data_enc['Role Category']
+
+X = data_enc[['Industry','Functional Area','Skill1','Skill2','Skill3','Skill4','Skill5']]
+
+# split the dataset into the training set and test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state =42)
+
+
+from sklearn.metrics import classification_report ,f1_score,accuracy_score,confusion_matrix,precision_score, recall_score
+from sklearn.ensemble import RandomForestClassifier
+
+forest=RandomForestClassifier()
+forest.fit(X_train,y_train)
+
+y_pred=forest.predict(X_test)
+import pickle
+pickle.dump(forest,open(BASE_DIR + "/Alt_Career/csv/model.pkl",'wb'), protocol = -1)
+
+#print("Accuracy on the training subset:(:.3f)",format(forest.score(X_train,y_train)))
+#print("Accuracy on the testing subset:(:.3f)",format(forest.score(X_test,y_test)))
+
