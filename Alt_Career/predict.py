@@ -78,7 +78,6 @@ def predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_
         for rol_cat in predicted_rolecat:
             data2 = data[(data['Role Category'] == rol_cat) & (data['Industry'] != ind_)]
             #display(data2)
-            print(set(data2['Industry'].values))
             ind_lt = list(set(data2['Industry'].values))
             role_lt = []
             d1 = []
