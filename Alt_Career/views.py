@@ -2,7 +2,7 @@ from Alt_Career.settings import BASE_DIR
 from rest_framework.views import APIView
 from .options1 import industry_info, func_area_info
 import os
-import pickle
+import pickle4 as pickle
 from django.http import HttpResponse
 from django.template import loader
 from django.shortcuts import render
