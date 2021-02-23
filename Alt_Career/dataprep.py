@@ -68,7 +68,7 @@ data['Industry'] = data['Industry'].replace(['Accounting / Finance', 'Advertisin
 
 
 data2 = data[data['Role Category'] == 'Programming & Design']
-data2 = data2.iloc[::2]
+data2 = data2.iloc[::5]
 ind = list(data2.index.values)
 
 data.drop(ind, inplace=True)
@@ -77,9 +77,9 @@ for rc in list(set(list(data['Role Category'].values))):
     data2 = data[data['Role Category'] == rc]
     l = len(data2)
     if l < 100:
-        data = data.append([data2]*5, ignore_index=False)
+        data = data.append([data2]*15, ignore_index=False)
     elif l > 100 and l < 500:
-        data = data.append([data2]*3, ignore_index=False)
+        data = data.append([data2]*6, ignore_index=False)
 
 data_enc = data.copy()
 
