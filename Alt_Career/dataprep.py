@@ -94,7 +94,6 @@ for rc in set(list(data['Role Category'].values)):
 for rc in list(set(list(data['Role Category'].values))):
     data2 = data[data['Role Category'] == rc]
     l = len(data2)
-    print(rc, l)
     if l<1000:
         data = data.append([data2]*2, ignore_index=False) 
 
