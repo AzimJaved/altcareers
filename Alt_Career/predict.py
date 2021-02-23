@@ -42,9 +42,9 @@ def predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_
         y_pred=forest.predict(X_test)
     else:
         forest=RandomForestClassifier()
-        forest.fit(X_train,y_train)
+        forest.fit(X, y)
 
-        y_pred=forest.predict(X_test)
+        y_pred=forest.predict(X)
     
     predicted_rolecat = []
     test = ['Industry', 'Functional Area', 'Skill1',
