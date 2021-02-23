@@ -148,25 +148,5 @@ data.to_csv(BASE_DIR + "/Alt_Career/csv/job_dataset.csv", index=False, header=Tr
 
 data_enc.to_csv(BASE_DIR + "/Alt_Career/csv/job_dataset_encoded.csv", index=False, header=True)
 
-y = data_enc['Role Category']
 
-X = data_enc[['Industry','Functional Area','Skill1','Skill2','Skill3','Skill4','Skill5']]
-
-# split the dataset into the training set and test set
-from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state =42)
-
-
-from sklearn.metrics import classification_report ,f1_score,accuracy_score,confusion_matrix,precision_score, recall_score
-from sklearn.ensemble import RandomForestClassifier
-
-forest=RandomForestClassifier()
-forest.fit(X_train,y_train)
-
-y_pred=forest.predict(X_test)
-import pickle
-pickle.dump(forest,open(BASE_DIR + "/Alt_Career/csv/model.pkl",'wb'), protocol = -1)
-
-#print("Accuracy on the training subset:(:.3f)",format(forest.score(X_train,y_train)))
-#print("Accuracy on the testing subset:(:.3f)",format(forest.score(X_test,y_test)))
 
