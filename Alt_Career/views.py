@@ -48,6 +48,7 @@ def result(request):
         sk4 = skill_dct[sk4_]
         sk5 = skill_dct[sk5_]
         
+
         ready,final = predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_)
         return render(request, 'results.html', {'sen': final, 'tab': ready, 'sen_tab': itertools.zip_longest(final, ready, range(0, len(final)))})
         template = loader.get_template('jinja2/results.html')
