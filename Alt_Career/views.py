@@ -118,16 +118,16 @@ def result(request):
                 for i in ind_lt:
                     intermed.append([rol_cat,i,5])
                 for i in ind_lt:
-                    data2 = data2[data['Industry'] == i]
-                    role_lt = list(set(list(data2['Role'].values)))
+                    data3 = data2[data2['Industry'] == i]
+                    role_lt = list(set(list(data3['Role'].values)))
                     for role in role_lt:
                         intermed.append([i, role, 5])
                     for role in role_lt :
-                        data3 = data2[data2['Role'] == role]
+                        data4 = data3[data3['Role'] == role]
                         sc = ['Skill1','Skill2','Skill3','Skill4','Skill5']
                         sk_dct = {}
                         for c in sc:
-                            for skill in list(data3[c].values):
+                            for skill in list(data4[c].values):
                                 sk_dct[skill] = sk_dct.get(skill, 0) + 1
                         count = sk_dct.values()
                         sort_dct = sorted(sk_dct.items(), key = lambda ele: ele[1], reverse = True)
