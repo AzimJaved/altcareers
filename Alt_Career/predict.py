@@ -80,7 +80,7 @@ def predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_
                             b = sort_skill[0:20]
                         d = [i,role] + readiness(b, sk_inp)
                         d1.append(d)
-                        top_skill = b[0:10]
+                        top_skill = b[0:5]
                         for sk in top_skill:
                             unique = " " + str(sk) + " "
                             intermed.append([role, unique, 3])
