@@ -154,6 +154,7 @@ def result(request):
         senkey = json.dumps(final)
         table = json.dumps(ready)
         '''
+        return render(request, 'results.html', {'sen': final, 'tab': ready, 'sen_tab':itertools.zip_longest(final, ready, range(0, len(final)))})
         template = loader.get_template('jinja2/results.html')
         return HttpResponse(template.render(request, {'sen': final, 'tab': ready, 'itertools': itertools, 'jsonify': jsonify}))
 

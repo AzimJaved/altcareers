@@ -42,20 +42,20 @@
                         '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'
                     ];
                     var options = {
-                        width: 800,
-                        height: 600,
+                        width: 1500,
+                        height: 8000,
                         sankey: {
                             link: {
                                 colorMode: 'gradient',
                                 color: {
-                                    stroke: 'white',
-                                    strokeWidth: 0.1
+                                    stroke: 'black',
+                                    strokeWidth: 0.3
                                 }
                             },
                             node: {
                                 width: 20,
                                 colors: colors,
-                                labelPadding: 30,
+                                labelPadding: 20,
                                 nodePadding: 40,
                                 label: {
                                     color: '#01070a',
@@ -82,7 +82,7 @@
 
                 function drawChart2() {
                     var data = new google.visualization.DataTable();
-                    data.addcolumn('string', 'Industry');
+                    data.addColumn('string', 'Industry');
                     data.addColumn('string', 'Job Role');
                     data.addColumn('boolean', 'Ready');
                     data.addColumn('boolean', 'Short-Term');
