@@ -81,6 +81,23 @@ for rc in list(set(list(data['Role Category'].values))):
     elif l > 100 and l < 500:
         data = data.append([data2]*6, ignore_index=False)
 
+for rc in set(list(data['Role Category'].values)):
+    data2 = data[data['Role Category'] == rc]
+    l = len(data2)
+    if l<500 and l>300:
+        data = data.append([data2]*4, ignore_index=False)
+    elif l>1000 and l<500:
+        data = data.append([data2]*2, ignore_index=False)
+    elif l<300:
+        data = data.append([data2]*9, ignore_index=False)
+
+for rc in list(set(list(data['Role Category'].values))):
+    data2 = data[data['Role Category'] == rc]
+    l = len(data2)
+    print(rc, l)
+    if l<1000:
+        data = data.append([data2]*2, ignore_index=False) 
+
 data_enc = data.copy()
 
 s1 = list(set(list(data_enc['Skill1'].values)))
@@ -130,8 +147,7 @@ data_enc['Industry'] = data_enc['Industry'].replace(ind_dct)
 
 data.to_csv(BASE_DIR + "/Alt_Career/csv/job_dataset.csv", index=False, header=True)
 
-data_enc.to_csv(BASE_DIR + "/Alt_Career/csv/job_dataset_encoded.csv",
-                index=False, header=True)
+data_enc.to_csv(BASE_DIR + "/Alt_Career/csv/job_dataset_encoded.csv", index=False, header=True)
 
 y = data_enc['Role Category']
 

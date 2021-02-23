@@ -39,6 +39,17 @@ def predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_
     # data_test
     test_df = pd.DataFrame(data_test)
 
+    test = ['Industry', 'Functional Area', 'Skill1',
+            'Skill2', 'Skill3', 'Skill4', 'Skill5']
+    param = [f_area, ind, sk1, sk2, sk3, sk4, sk5]
+    data_test = {}
+    i = 0
+    for col in test:
+        data_test[col] = [param[i]]
+        i = i+1
+    # data_test
+    test_df = pd.DataFrame(data_test)
+
     predict_code = forest.predict(test_df)
     predict_code = predict_code.tolist()
     # print(predict_code)
@@ -71,7 +82,6 @@ def predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_
             ind_lt = list(set(data2['Industry'].values))
             role_lt = []
             d1 = []
-                                
             for i in ind_lt:
                 intermed = []
                 intermed.append([rol_cat,i,3])
@@ -102,7 +112,6 @@ def predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_
                         intermed.append([role, unique, 3])
                 final.append(intermed)
             ready.append(d1)
-            
 
     '''
     else:
