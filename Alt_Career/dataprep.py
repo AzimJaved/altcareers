@@ -149,7 +149,7 @@ forest=RandomForestClassifier()
 forest.fit(X_train,y_train)
 
 y_pred=forest.predict(X_test)
-import pickle4 as pickle
+import pickle
 pickle.dump(forest,open(BASE_DIR + "/Alt_Career/csv/model.pkl",'wb'), protocol = -1)
 
 #print("Accuracy on the training subset:(:.3f)",format(forest.score(X_train,y_train)))
