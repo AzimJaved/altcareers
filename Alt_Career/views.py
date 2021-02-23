@@ -116,12 +116,12 @@ def result(request):
                 intermed = []
                 d1 = []
                 for i in ind_lt:
-                    intermed.append([rol_cat,i,5])
+                    intermed.append([rol_cat,i,4])
                 for i in ind_lt:
                     data3 = data2[data2['Industry'] == i]
                     role_lt = list(set(list(data3['Role'].values)))
                     for role in role_lt:
-                        intermed.append([i, role, 5])
+                        intermed.append([i, role, 3])
                     for role in role_lt :
                         data4 = data3[data3['Role'] == role]
                         sc = ['Skill1','Skill2','Skill3','Skill4','Skill5']
@@ -129,7 +129,7 @@ def result(request):
                         for c in sc:
                             for skill in list(data4[c].values):
                                 sk_dct[skill] = sk_dct.get(skill, 0) + 1
-                        count = sk_dct.values()
+                        count = list(sk_dct.values())
                         sort_dct = sorted(sk_dct.items(), key = lambda ele: ele[1], reverse = True)
                         sort_skill = [x[0] for x in sort_dct]
                         #print(sort_dct)
@@ -137,13 +137,13 @@ def result(request):
                             b = sort_skill[0:30]
                         else:
                             b = sort_skill[0:20]
-                        d = [role] + readiness(b, sk_inp)
+                        d = [i,role] + readiness(b, sk_inp)
                         d1.append(d)
                         top_skill = b[0:10]
                         for sk in top_skill:
                             unique = " " + str(sk) + " "
-                            intermed.append([role, unique, 5])
-                    ready.append(d1)
+                            intermed.append([role, unique, 2])
+                ready.append(d1)
                 final.append(intermed)
 
         '''
