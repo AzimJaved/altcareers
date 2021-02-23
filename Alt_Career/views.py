@@ -12,25 +12,6 @@ from .predict import predict
 from .dataprep import ind_dct, fun_dct, skill_dct, rolcat_dct, role_dct
 
 
-def readiness(x, sk_inp):
-    r = 0
-    for i in sk_inp:
-        if i in x:
-            r = r + 1
-    m = len(x)/len(sk_inp)
-    m = r/m
-    if r >= 0.7:
-        t = [True, False, False]
-        return t
-
-    elif r >= 0.4:
-        t = [False, True, False]
-        return t
-
-    else:
-        t = [False, False, True]
-        return t
-
 
 class options_industry(APIView):
     def get(self, request):
@@ -67,8 +48,8 @@ def result(request):
         sk4 = skill_dct[sk4_]
         sk5 = skill_dct[sk5_]
         
-        ready,final = predict.predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_)
-
+        ready,final = predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_)
+        return render(request, 'results.html', {'sen': final, 'tab': ready, 'sen_tab': itertools.zip_longest(final, ready, range(0, len(final)))})
         template = loader.get_template('jinja2/results.html')
         return HttpResponse(template.render(request, {'sen': final, 'tab': ready, 'itertools': itertools, 'jsonify': jsonify}))
 
