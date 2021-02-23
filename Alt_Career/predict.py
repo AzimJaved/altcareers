@@ -57,7 +57,7 @@ def predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_
                 intermed = []
                 d1 = []
                 for i in ind_lt:
-                    intermed.append([rol_cat,i,4])
+                    intermed.append([rol_cat,i,3])
                 for i in ind_lt:
                     data3 = data2[data2['Industry'] == i]
                     role_lt = list(set(list(data3['Role'].values)))
@@ -83,7 +83,7 @@ def predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_
                         top_skill = b[0:10]
                         for sk in top_skill:
                             unique = " " + str(sk) + " "
-                            intermed.append([role, unique, 2])
+                            intermed.append([role, unique, 3])
                 ready.append(d1)
                 final.append(intermed)
 
