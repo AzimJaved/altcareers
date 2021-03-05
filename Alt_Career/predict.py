@@ -127,7 +127,7 @@ def predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_
                 top_skill = b[0:5]
                 for sk in top_skill:
                     unique = " " + str(sk) + " "
-                    intermed.append([role, unique, 3])
+                    intermed.append([role, unique, 4])
             final.append(intermed)
             ready.append(d1)
 
