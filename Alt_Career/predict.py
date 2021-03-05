@@ -41,6 +41,7 @@ def predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_
 
         y_pred=forest.predict(X_test)
     else:
+        from sklearn.ensemble import RandomForestClassifier
         forest=RandomForestClassifier()
         forest.fit(X, y)
 
