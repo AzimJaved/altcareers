@@ -95,10 +95,9 @@ def predict(ind,f_area,sk1,sk2,sk3,sk4,sk5,ind_,f_area_,sk1_,sk2_,sk3_,sk4_,sk5_
     # print(predicted_rolecat)
     if len(predicted_rolecat) > 0:
         for rol_cat in predicted_rolecat:
-            data2 = data[(data['Role Category'] == rol_cat)
+            data2 = data[(data['Role Category'] == rol_cat)]
             #display(data2)
             #ind_lt = list(set(data2['Industry'].values))
-            role_lt = []
             d1 = []
             #for i in ind_lt:
             intermed = []
