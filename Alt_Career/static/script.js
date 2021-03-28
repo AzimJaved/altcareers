@@ -2,20 +2,21 @@
 function validateForm() {
     // document.getElementById('job-form').submit()
     // return true
-    let _industry = document.getElementById('industry-choice')
-    let _functionalArea = document.getElementById('functionalArea-choice')
     let _skill1 = document.getElementById('skill1-choice')
     let _skill2 = document.getElementById('skill2-choice')
     let _skill3 = document.getElementById('skill3-choice')
     let _skill4 = document.getElementById('skill4-choice')
     let _skill5 = document.getElementById('skill5-choice')
+    let _skill6 = document.getElementById('skill6-choice')
+    let _skill7 = document.getElementById('skill7-choice')
 
-    let functionalArea = JSON.parse(document.getElementById('functionalAreas-list').innerHTML)
     let skill1 = JSON.parse(document.getElementById('skill1-list').innerHTML)
     let skill2 = JSON.parse(document.getElementById('skill2-list').innerHTML)
     let skill3 = JSON.parse(document.getElementById('skill3-list').innerHTML)
     let skill4 = JSON.parse(document.getElementById('skill4-list').innerHTML)
     let skill5 = JSON.parse(document.getElementById('skill5-list').innerHTML)
+    let skill6 = JSON.parse(document.getElementById('skill6-list').innerHTML)
+    let skill7 = JSON.parse(document.getElementById('skill7-list').innerHTML)
 
     let success = true
 
@@ -61,6 +62,24 @@ function validateForm() {
         }
     } else {
         _skill5.classList.add('error')
+        success = false
+    }
+
+    if (skill6.includes(_skill6.value)) {
+        if (_skill6.classList.contains('error')) {
+            _skill6.classList.remove('error')
+        }
+    } else {
+        _skill6.classList.add('error')
+        success = false
+    }
+
+    if (skill7.includes(_skill7.value)) {
+        if (_skill7.classList.contains('error')) {
+            _skill7.classList.remove('error')
+        }
+    } else {
+        _skill7.classList.add('error')
         success = false
     }
     console.log(success)
