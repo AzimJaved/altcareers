@@ -10,6 +10,15 @@ import csv
 with open(BASE_DIR + '/Alt_Career/csv/option.json','r') as f:
     options_dct = json.load(f)
 
+def skill0_info():
+    data_enc = pd.read_csv(BASE_DIR + "/Alt_Career/csv/job_dataset_encoded.csv")
+    m_enc = list(set(data_enc['Skill1'].values))
+    # code = options_dct[s1]
+    # if code in m_enc:
+    #     m_enc.remove(code)
+    info_dct = [key for key in options_dct]
+    return JsonResponse({"data": info_dct}, status=status.HTTP_200_OK)
+
 def skill1_info(s1):
     data_enc = pd.read_csv(BASE_DIR + "/Alt_Career/csv/job_dataset_encoded.csv")
     m_enc = list(set(data_enc['Skill2'].values))

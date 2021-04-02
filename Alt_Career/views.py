@@ -1,6 +1,6 @@
 from Alt_Career.settings import BASE_DIR
 from rest_framework.views import APIView
-from .options1 import skill1_info, skill2_info, skill3_info, skill4_info, skill5_info, skill6_info
+from .options1 import skill0_info, skill1_info, skill2_info, skill3_info, skill4_info, skill5_info, skill6_info
 import os
 import json
 from django.http import HttpResponse
@@ -15,6 +15,9 @@ from .predict import predict
 with open(BASE_DIR + '/Alt_Career/csv/skills.json','r') as f:
     skill_dct = json.load(f)
 
+class options_skill0(APIView):
+    def get(self, request):
+        return skill0_info()
 
 class options_skill1(APIView):
     def get(self, request):
