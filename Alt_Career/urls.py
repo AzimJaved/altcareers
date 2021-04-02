@@ -15,12 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import options_industry, options_func, home, result
+from .views import options_skill1, options_skill2, options_skill3, options_skill4, options_skill5, options_skill6, home, result
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('industry/', options_industry.as_view()),
-    path('func/', options_func.as_view()),
+    path('skill1/', options_skill1.as_view()),
+    path('skill2/', options_skill2.as_view()),
+    path('skill3/', options_skill3.as_view()),
+    path('skill4/', options_skill4.as_view()),
+    path('skill5/', options_skill5.as_view()),
+    path('skill6/', options_skill6.as_view()),
     path('', home),
     path('recommend/', result)
 ]

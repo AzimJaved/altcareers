@@ -19,27 +19,25 @@
     <form action="/recommend/" id="job-form" method="POST">
       {% csrf_token %}
       <div>
+        {% include './components/industry.html' %}
+        {% include 'components/functionalArea.html' %}
         {% include 'components/skill1.html' %}
         {% include 'components/skill2.html' %}
         {% include 'components/skill3.html' %}
         {% include 'components/skill4.html' %}
         {% include 'components/skill5.html' %}
-        {% include 'components/skill6.html' %}
-        {% include 'components/skill7.html' %}
         <button type="button" class="registerbtn" onclick="validateForm()">Predict</button>
       </div>
     </form>
     <div style="margin-left:auto; margin-right:auto;">
       <hr>
     </div>
+    <script type="application/json" id="functionalAreas-list"></script>
     <script type="application/json" id="skill1-list"></script>
     <script type="application/json" id="skill2-list"></script>
     <script type="application/json" id="skill3-list"></script>
     <script type="application/json" id="skill4-list"></script>
     <script type="application/json" id="skill5-list"></script>
-    <script type="application/json" id="skill6-list"></script>
-    <script type="application/json" id="skill7-list"></script>
-
   </div>
   <script src="/static/script.js"></script>
 </body>
