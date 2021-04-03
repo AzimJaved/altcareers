@@ -16,7 +16,7 @@ def skill0_info():
     # code = options_dct[s1]
     # if code in m_enc:
     #     m_enc.remove(code)
-    info_dct = [key for key in options_dct]
+    info_dct = [key for key,val in options_dct.items()]
     return JsonResponse({"data": info_dct}, status=status.HTTP_200_OK)
 
 def skill1_info(s1):
@@ -25,7 +25,7 @@ def skill1_info(s1):
     code = options_dct[s1]
     if code in m_enc:
         m_enc.remove(code)
-    info_dct = [key for key,val in options_dct if val in m_enc]
+    info_dct = [key for key,val in options_dct.items() if val in m_enc]
     return JsonResponse({"data": info_dct}, status=status.HTTP_200_OK)
 
 
@@ -36,7 +36,7 @@ def skill2_info(s1, s2):
     for c in code:
         if c in m_enc:
             m_enc.remove(c)
-    info_dct = [key for key,val in options_dct if val in m_enc]
+    info_dct = [key for key,val in options_dct.items() if val in m_enc]
     return JsonResponse({"data": info_dct}, status=status.HTTP_200_OK)
 
 def skill3_info(s1, s2, s3):
@@ -46,7 +46,7 @@ def skill3_info(s1, s2, s3):
     for c in code:
         if c in m_enc:
             m_enc.remove(c)
-    info_dct = [key for key,val in options_dct if val in m_enc]
+    info_dct = [key for key,val in options_dct.items() if val in m_enc]
     return JsonResponse({"data": info_dct}, status=status.HTTP_200_OK)
 
 def skill4_info(s1, s2, s3, s4):
@@ -56,7 +56,7 @@ def skill4_info(s1, s2, s3, s4):
     for c in code:
         if c in m_enc:
             m_enc.remove(c)
-    info_dct = [key for key,val in options_dct if val in m_enc]
+    info_dct = [key for key,val in options_dct.items() if val in m_enc]
     return JsonResponse({"data": info_dct}, status=status.HTTP_200_OK)
 
 def skill5_info(s1, s2, s3, s4, s5):
@@ -66,7 +66,7 @@ def skill5_info(s1, s2, s3, s4, s5):
     for c in code:
         if c in m_enc:
             m_enc.remove(c)
-    info_dct = [key for key,val in options_dct if val in m_enc]
+    info_dct = [key for key,val in options_dct.items() if val in m_enc]
     return JsonResponse({"data": info_dct}, status=status.HTTP_200_OK)
 
 def skill6_info(s1, s2, s3, s4, s5, s6):
@@ -76,5 +76,5 @@ def skill6_info(s1, s2, s3, s4, s5, s6):
     for c in code:
         if c in m_enc:
             m_enc.remove(c)
-    info_dct = [key for key,val in options_dct if val in m_enc]
+    info_dct = [key for key,val in options_dct.items() if val in m_enc]
     return JsonResponse({"data": info_dct}, status=status.HTTP_200_OK)
