@@ -7,7 +7,7 @@ from django.http import JsonResponse
 from .settings import BASE_URL, BASE_DIR
 import csv
 
-with open(BASE_DIR + '/Alt_Career/csv/skills.json','r') as f:
+with open(BASE_DIR + '/Alt_Career/csv/option.json','r') as f:
     skills_dct = json.load(f)
 
 def skill0_info():
