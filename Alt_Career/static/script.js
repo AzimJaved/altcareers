@@ -95,10 +95,50 @@ function validateForm() {
 
 function populateSelect(tagName, options) {
     let tag = document.getElementById(tagName)
+    console.log(tagName)
     let dataOptions = ""
     options.forEach(option => {
         let optionHTML = `<option value="${option}">${option}</option>\n`
         dataOptions += optionHTML;
     });
     tag.innerHTML = dataOptions;
+}
+
+window.onload = () => {
+    fetch(`/skills`)
+        .then(response => response.json())
+        .then(data => {
+            populateSelect(`skill1-datalist`, data['data'])
+            document.getElementById(`skill1-list`).innerHTML = JSON.stringify(data['data']);
+        })
+}
+
+function loadSkills(event) {
+    let caller = event.target.id.split('-')[0]
+    let s7 = document.getElementById('skill7-choice').value
+    let s6 = document.getElementById('skill6-choice').value
+    let s5 = document.getElementById('skill5-choice').value
+    let s4 = document.getElementById('skill4-choice').value
+    let s3 = document.getElementById('skill3-choice').value
+    let s2 = document.getElementById('skill2-choice').value
+    let s1 = document.getElementById('skill1-choice').value
+    let url = `/${caller}?`
+    switch (caller) {
+        case 'skill7': url += 'skill7=' + s7
+        case 'skill6': url += 'skill6=' + s6 + '&'
+        case 'skill5': url += 'skill5=' + s5 + '&'
+        case 'skill4': url += 'skill4=' + s4 + '&'
+        case 'skill3': url += 'skill3=' + s3 + '&'
+        case 'skill2': url += 'skill2=' + s2 + '&'
+        case 'skill1': url += 'skill1=' + s1 + '&'
+    }
+    url += 'dummy=d'
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            let c = parseInt(caller[caller.length - 1])
+            populateSelect(`skill${c + 1}-datalist`, data['data'])
+            document.getElementById(`skill${c + 1}-list`).innerHTML = JSON.stringify(data['data']);
+        })
+
 }

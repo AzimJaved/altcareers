@@ -2,7 +2,7 @@
     style="display: flex; flex-flow: row; justify-content: center; align-content: center; text-align: center; padding: 1em;">
     <label style="width: 30%" for="skill2">Skill 2</label>
     <div style="padding-left: 1em; width: 40%">
-        <input class="list" list="skill2-datalist" name="skill2" id="skill2-choice" autocomplete="off"></input>
+        <input class="list" list="skill2-datalist" name="skill2" id="skill2-choice" onBlur="loadSkills(event)" autocomplete="off"></input>
         <datalist class="data-list" id="skill2-datalist">
             
         </datalist>
