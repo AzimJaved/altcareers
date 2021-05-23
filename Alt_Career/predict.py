@@ -4,31 +4,14 @@ import json
 from .settings import BASE_URL, BASE_DIR
 import math
 from itertools import permutations
-
-# Loading useful dictionaries
-with open(BASE_DIR + '/Alt_Career/csv/skills.json', 'r') as f:
-    skill_dct = json.load(f)
-with open(BASE_DIR + '/Alt_Career/csv/functional_area.json', 'r') as f:
-    fun_dct = json.load(f)
-
-with open(BASE_DIR + '/Alt_Career/csv/option.json', 'r') as f:
-    options_dct = json.load(f)
-
-with open(BASE_DIR + '/Alt_Career/csv/role.json', 'r') as f:
-    role_dct = json.load(f)
-
-with open(BASE_DIR + '/Alt_Career/csv/rolecat.json', 'r') as f:
-    rolcat_dct = json.load(f)
-
-with open(BASE_DIR + '/Alt_Career/csv/industry.json', 'r') as f:
-    ind_dct = json.load(f)
+import joblib
 
 
-def find_key(dct, value):
+def find_key(dct,value):
     '''
     Find key corresponding to the given value in the dct
     '''
-    for key, val in dct.items():
+    for key,val in dct.items():
         if val == value:
             return key
 
@@ -38,26 +21,22 @@ def jacard(x, sk_inp):
     Calculate jacard index for the given job role based on skills
     '''
     vec_input = []
-    c = 0
     dot_prod = 0
     for param in sk_inp:
         if param in x:
             vec_input.append(1)
-            c = c + 1
+            dot_prod = dot_prod + 1
         else:
             vec_input.append(0)
-    if c == 0:
-        return 0
-    vec_compare = [1, 1, 1, 1, 1, 1, 1]
-    for i in range(len(vec_compare)):
-        if vec_input[i] == 1:
-            dot_prod = dot_prod + 1
     if dot_prod == 0:
         return 0
+    vec_compare = [1,1,1,1,1,1,1]
+    
     mod_comp = math.sqrt(7)
-    mod_vec = math.sqrt(c)
+    mod_vec = math.sqrt(dot_prod)
     jacard_index = dot_prod/(mod_vec*mod_comp)
     return jacard_index
+
 
 
 def readiness(eligible_roles):
@@ -69,33 +48,73 @@ def readiness(eligible_roles):
         r = role[1]
         if r >= 0.6:
             t = [True, False, False]
-            ready.append(t)
+            ready.append([role[0]] + t)
 
-        elif r >= 0.4:
-            t = [False, True, False]
-            ready.append(t)
+        elif r >= 0.4 :
+            t=[False, True, False]
+            ready.append([role[0]] + t)
 
-        else:
-            t = [False, False, True]
-            ready.append(t)
+        else :
+            t=[False, False, True]
+            ready.append([role[0]] + t)
     return ready
 
 
 def predict(input_str, input_enc):
     #data = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset.csv')
-    data_enc = pd.read_csv(
-        BASE_DIR + '/Alt_Career/csv/job_dataset_encoded.csv')
+    #Loading useful dictionaries
+    with open(BASE_DIR + '/Alt_Career/csv/skills.json','r') as f:
+        skill_dct = json.load(f)
+    with open(BASE_DIR + '/Alt_Career/csv/functional_area.json','r') as f:
+        fun_dct = json.load(f)
 
-    input_combo = list(permutations(input_enc, 7))
+    with open(BASE_DIR + '/Alt_Career/csv/option.json','r') as f:
+        options_dct = json.load(f)
+
+    with open(BASE_DIR + '/Alt_Career/csv/role.json','r') as f:
+        role_dct = json.load(f)
+
+    with open(BASE_DIR + '/Alt_Career/csv/rolecat.json','r') as f:
+        rolcat_dct = json.load(f)
+
+    with open(BASE_DIR + '/Alt_Career/csv/industry.json','r') as f:
+        ind_dct = json.load(f)
+
+    data_enc = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset_encoded.csv')
+    
+    c = 0
+    per = [[],[],[],[],[],[],[]]
+    s_col = ['Skill1','Skill2','Skill3','Skill4','Skill5','Skill6','Skill7']
+    #print(s_col)
+    for i in s_col:
+        for enc in input_enc:
+            if len(data_enc[data_enc[i] == enc]) > 0:
+                per[s_col.index(i)].append(enc)
+    for l in per:
+        if len(l) == 0:
+            l.append(sk1)
+        if len(l) < 7:
+            c = 1
+
+
+    #Making permutations of skills input to account for its presence in any column
+
+    from itertools import permutations
+    input_combo = list(permutations(input_enc))
+
+    if c == 1:
+        for i in range(len(input_combo)):
+            k = len(input_combo) - i - 1
+            for j in range(len(input_combo[k])):
+                if input_combo[k][j] not in per[j]:
+                    del input_combo[k]
+                    break            
 
     predicted_funcarea = []
-    test = ['Skill1', 'Skill2', 'Skill3',
-            'Skill4', 'Skill5', 'Skill6', 'Skill7']
+    test = ['Skill1','Skill2','Skill3','Skill4','Skill5', 'Skill6','Skill7']
 
-    import pickle
-    with open(BASE_DIR + '/Alt_Career/csv/model.pkl', 'rb') as file:
-        forest = pickle.load(file)
-
+    #with open('model.pkl', 'rb') as file:
+    forest = joblib.load('model.gzip')
     for x in input_combo:
         param = list(x)
         data_test = {}
@@ -105,34 +124,36 @@ def predict(input_str, input_enc):
             i = i+1
         test_df = pd.DataFrame(data_test)
 
-        predict_code = forest.predict(test_df)
+        predict_code = forest.predict(test_df)   
         predict_code = predict_code.tolist()
 
-        if len(predict_code) > 0:
+        if len(predict_code)>0:
             for code in predict_code:
                 if code is None:
                     continue
                 else:
-                    for key, value in fun_dct.items():
+                    for key,value in fun_dct.items():
                         if value == code:
                             predicted_funcarea.append(key)
         else:
             continue
-    # Unique functional areas in dataset
+
+    #Unique functional areas in dataset
     funcarea = set(fun_dct.keys())
     predicted_funcarea = set(predicted_funcarea)
-    # Get valid predicted func areas by checking for intersection with the original list of func areas
+    #Get valid predicted func areas by checking for intersection with the original list of func areas
     predicted_funcarea.intersection_update(funcarea)
-    # Predicted functional area(s)
+    #Predicted functional area(s)
     predicted_funcarea = list(predicted_funcarea)
-    # Predicted functional area encoded values from fun_dct
+
+    #Predicted functional area encoded values from fun_dct
     codes = []
     for x in predicted_funcarea:
         codes.append(fun_dct[x])
 
-    # Generating 3d lists namely, senkey and table to draw the corresponding viz
-    # senkey - [func area, job role, 5],[job role, skill, 5] --format[source node, destination node, value(thickness of senkey)]
-    # table - [job role, True, False, False] --format-- [role, ready, mid term, long term] -- True/tick, False/cross
+    #Generating 3d lists namely, senkey and table to draw the corresponding viz
+    #senkey - [func area, job role, 5],[job role, skill, 5] --format[source node, destination node, value(thickness of senkey)]
+    #table - [job role, True, False, False] --format-- [role, ready, mid term, long term] -- True/tick, False/cross
 
     if len(predicted_funcarea) > 0:
         senkey = []
@@ -142,36 +163,53 @@ def predict(input_str, input_enc):
             role_ready = []
             roles_jacard = []
             data_fun = data_enc[data_enc['Functional Area'] == function]
-            role_lt = list(set(data_fun['Role'].values))
+            role_lt = list(set(data_fun['Role Category'].values))
             for r in role_lt:
-                fun_senkey.append(
-                    [find_key(fun_dct, function), find_key(role_dct, r), 5])
-                data_role = data_fun[data_fun['Role'] == r]
-                sc = ['Skill1', 'Skill2', 'Skill3',
-                      'Skill4', 'Skill5', 'Skill6', 'Skill7']
+                fun_senkey.append([find_key(fun_dct,function),find_key(rolcat_dct,r),5])
+                data_role = data_fun[data_fun['Role Category'] == r]
+                sc = ['Skill1','Skill2','Skill3','Skill4','Skill5','Skill6','Skill7']
                 sk_count = {}
                 for c in sc:
                     for skill in list(data_role[c].values):
                         sk_count[skill] = sk_count.get(skill, 0) + 1
-                #count = sk_count.values()
-                sort_dct = sorted(sk_count.items(),
-                                  key=lambda ele: ele[1], reverse=True)
+                count = sk_count.values()
+                sort_dct = sorted(sk_count.items(), key = lambda ele: ele[1], reverse = True)
                 sort_skill = [x[0] for x in sort_dct]
-                # Find 7 mostt frequently occurring skills within the role in dataset
-                top_skill = sort_skill[0:7]
-                rol = find_key(role_dct, r)
-                # Top skills will be used to calculate jacard's index
-                # The integer codes will be used to calculate jacard's index to avoid discrepancies in accounting for similar skills
+                #Find 7 mostt frequently occurring skills within the role in dataset
+                top_skill = sort_skill[0:15]
+                rol = find_key(rolcat_dct,r)
+                #Top skills will be used to calculate jacard's index
+                #The integer codes will be used to calculate jacard's index to avoid discrepancies in accounting for similar skills
                 d = [rol] + [jacard(top_skill, input_enc)]
                 roles_jacard.append(d)
-                role_ready.append(d)
-                # Top skills will appear in senkey
+                #role_ready.append(d)
+                #Top skills will appear in senkey
                 for sk in top_skill:
-                    fun_senkey.append([rol, find_key(options_dct, sk), 5])
-            # sorting the job roles according to suitability determined by high jacard's index value
-            roles_jacard.sort(reverse=True, key=lambda x: x[1])
+                    fun_senkey.append([rol, find_key(skill_dct,sk), 5])
+            #sorting the job roles according to suitability determined by high jacard's index value
+            roles_jacard.sort(reverse=True,key = lambda x: x[1])
             role_ready = readiness(roles_jacard)
             table.append(role_ready)
             senkey.append(fun_senkey)
+    else:
+        senkey = []
+        table = []
+        return table, senkey
 
-    return table, senkey
+    if len(predicted_funcarea) > 1:
+        index = []
+        for i in range(len(table)):
+            for j in range(len(table[i])):
+                if table[i][j][1] == True or table[i][j][2] == True:
+                    flag = 1
+                    index.append(i)
+                    break
+                else:
+                    flag = 0
+
+
+    tx = [table[i] for i in index]
+
+    sen = [senkey[i] for i in index]
+    
+    return tx,sen
