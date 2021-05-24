@@ -201,15 +201,20 @@ def predict(input_str, input_enc):
         for i in range(len(table)):
             for j in range(len(table[i])):
                 if table[i][j][1] == True or table[i][j][2] == True:
-                    flag = 1
                     index.append(i)
                     break
-                else:
-                    flag = 0
+    else:
+        return table, senkey
 
 
     tx = [table[i] for i in index]
-
     sen = [senkey[i] for i in index]
-    
+        
+    if len(index) != 0:
+        tx = [table[i] for i in index]
+        sen = [senkey[i] for i in index]
+    else:
+        tx = [table[0], table[1]]
+        sen = [senkey[0], senkey[1]]
+
     return tx,sen
