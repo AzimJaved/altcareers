@@ -28,37 +28,6 @@
                 google.charts.load("current", {
                     packages: ["sankey", "table"]
                 });
-
-                function drawChart2() {
-                    var data = new google.visualization.DataTable();
-                    data.addColumn('string', 'Job Role');
-                    data.addColumn('boolean', 'Ready');
-                    data.addColumn('boolean', 'Short-Term');
-                    data.addColumn('boolean', 'Long-Term');
-                    data.addRows(JSON.parse(`{{ j|json }}`));
-
-                    var options = {
-                        showRowNumber: false,
-                        width: '100%',
-                        height: '100%',
-                        trigger: 'none',
-                    };
-
-                    // Instantiate and draw the chart.
-                    ref = document.createElement('div')
-                    ref.id = 'table-container{{k}}'
-                    ref.classList = ['table']
-                    document.getElementById('prediction{{k}}').appendChild(ref)
-                    var chart = new google.visualization.Table(ref);
-                    google.visualization.events.addListener(chart, 'error', (err) => {
-                        document.getElementById('prediction{{k}}').innerHTML = "Sorry, No job role could be predicted"
-
-                    })
-                    chart.draw(data, options);
-                }
-                google.charts.setOnLoadCallback(drawChart2);
-                google.charts.setOnLoadCallback(drawChart);
-
                 function drawChart() {
                     var data = new google.visualization.DataTable();
                     data.addColumn('string', 'From');
@@ -71,8 +40,8 @@
                         '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'
                     ];
                     var options = {
-                        width: 1500,
-                        height: 1500,
+                        width: 700,
+                        height: 800,
                         sankey: {
                             link: {
                                 colorMode: 'gradient',
@@ -108,8 +77,38 @@
                     })
                     chart.draw(data, options);
                 }
+                
+                
+                function drawChart2() {
+                    var data = new google.visualization.DataTable();
+                    data.addColumn('string', 'Job Role');
+                    data.addColumn('boolean', 'Ready');
+                    data.addColumn('boolean', 'Short-Term');
+                    data.addColumn('boolean', 'Long-Term');
+                    data.addRows(JSON.parse(`{{ j|json }}`));
 
+                    var options = {
+                        showRowNumber: false,
+                        width: '100%',
+                        height: '100%',
+                        trigger: 'none',
+                    };
 
+                    // Instantiate and draw the chart.
+                    ref = document.createElement('div')
+                    ref.id = 'table-container{{k}}'
+                    ref.classList = ['table']
+                    document.getElementById('prediction{{k}}').appendChild(ref)
+                    var chart = new google.visualization.Table(ref);
+                    google.visualization.events.addListener(chart, 'error', (err) => {
+                        document.getElementById('prediction{{k}}').innerHTML = "Sorry, No job role could be predicted"
+
+                    })
+                    chart.draw(data, options);
+                }
+                google.charts.setOnLoadCallback(drawChart2);
+                google.charts.setOnLoadCallback(drawChart);
+                
             }
             loadCharts();
         </script>
