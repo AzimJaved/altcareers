@@ -109,7 +109,8 @@ def predict(input_str, input_enc):
 
     #with open('model.pkl', 'rb') as file:
     forest = joblib.load('model.gzip')
-    for param in input_combo:
+    for x in input_combo:
+        param = list(x)
         data_test = {}
         i = 0
         for col in test:
