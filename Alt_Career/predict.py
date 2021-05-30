@@ -99,24 +99,17 @@ def predict(input_str, input_enc):
 
     #Making permutations of skills input to account for its presence in any column
 
-    from itertools import permutations
-    input_combo = list(permutations(input_enc))
+    from itertools import product
+    input_combo = list(itertools.product(*input_enc))
 
-    if c == 1:
-        for i in range(len(input_combo)):
-            k = len(input_combo) - i - 1
-            for j in range(len(input_combo[k])):
-                if input_combo[k][j] not in per[j]:
-                    del input_combo[k]
-                    break            
+              
 
     predicted_funcarea = []
     test = ['Skill1','Skill2','Skill3','Skill4','Skill5', 'Skill6','Skill7']
 
     #with open('model.pkl', 'rb') as file:
     forest = joblib.load('model.gzip')
-    for x in input_combo:
-        param = list(x)
+    for param in input_combo:
         data_test = {}
         i = 0
         for col in test:
