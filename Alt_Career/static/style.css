@@ -35,12 +35,17 @@ body {
 .registerbtn {
     background-color: #ff0000;
     color: white;
-    padding: 16px 35px;
     margin: auto;
     display: flex;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
     border: none;
     cursor: pointer;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
     width: 45%;
+    max-width: 20em;
     opacity: 0.9;
     text-align: center;
     border-radius: 8px;
