@@ -100,7 +100,7 @@ def predict(input_str, input_enc):
     #Making permutations of skills input to account for its presence in any column
 
     from itertools import product
-    input_combo = list(itertools.product(*input_enc))
+    input_combo = list(itertools.product(*per))
 
               
 
