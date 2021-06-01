@@ -3,7 +3,7 @@ import os
 import json
 from .settings import BASE_URL, BASE_DIR
 import math
-from itertools import permutations
+import itertools
 import joblib
 
 
