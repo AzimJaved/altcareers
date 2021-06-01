@@ -107,8 +107,8 @@ def predict(input_str, input_enc):
     predicted_funcarea = []
     test = ['Skill1','Skill2','Skill3','Skill4','Skill5', 'Skill6','Skill7']
 
-    #with open('model.pkl', 'rb') as file:
-    forest = joblib.load('model.gzip')
+    with open('model.gzip', 'rb') as file:
+        forest = joblib.load(file)
     for x in input_combo:
         param = list(x)
         data_test = {}
