@@ -92,7 +92,7 @@ def predict(input_str, input_enc):
                 per[s_col.index(i)].append(enc)
     for l in per:
         if len(l) == 0:
-            l.append(sk1)
+            l.append(input_enc[0])
         if len(l) < 7:
             c = 1
 
@@ -107,7 +107,7 @@ def predict(input_str, input_enc):
     predicted_funcarea = []
     test = ['Skill1','Skill2','Skill3','Skill4','Skill5', 'Skill6','Skill7']
 
-    with open(BASE_DIR + '/Alt_Career/csv/model.gzip','r') as file:
+    with open(BASE_DIR + '/Alt_Career/csv/model.gz','rb') as file:
         forest = joblib.load(file)
     for x in input_combo:
         param = list(x)
