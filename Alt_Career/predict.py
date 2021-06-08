@@ -107,8 +107,7 @@ def predict(input_str, input_enc):
     predicted_funcarea = []
     test = ['Skill1','Skill2','Skill3','Skill4','Skill5', 'Skill6','Skill7']
 
-    with open(BASE_DIR + '/Alt_Career/csv/model.gz','rb') as file:
-        forest = joblib.load(file)
+    forest = joblib.load(BASE_DIR + '/Alt_Career/csv/model.gz')
     for x in input_combo:
         param = list(x)
         data_test = {}
