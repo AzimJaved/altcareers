@@ -63,13 +63,13 @@ def readiness(eligible_roles):
 def predict(input_str, input_enc):
     #data = pd.read_csv(BASE_DIR + '/Alt_Career/csv/job_dataset.csv')
     #Loading useful dictionaries
-    with open(BASE_DIR + '/Alt_Career/csv/skills.json','r') as f:
+    with open(BASE_DIR + '/Alt_Career/csv/option.json','r') as f:
         skill_dct = json.load(f)
     with open(BASE_DIR + '/Alt_Career/csv/functional_area.json','r') as f:
         fun_dct = json.load(f)
 
-    with open(BASE_DIR + '/Alt_Career/csv/option.json','r') as f:
-        options_dct = json.load(f)
+    #with open(BASE_DIR + '/Alt_Career/csv/option.json','r') as f:
+    #    options_dct = json.load(f)
 
     with open(BASE_DIR + '/Alt_Career/csv/role.json','r') as f:
         role_dct = json.load(f)
@@ -177,6 +177,7 @@ def predict(input_str, input_enc):
                 roles_jacard.append(d)
                 #role_ready.append(d)
                 #Top skills will appear in senkey
+                top_skill = top_skill[0:5]
                 for sk in top_skill:
                     fun_senkey.append([rol, find_key(skill_dct,sk), 5])
             #sorting the job roles according to suitability determined by high jacard's index value
