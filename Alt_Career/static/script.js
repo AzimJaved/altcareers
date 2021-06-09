@@ -124,13 +124,13 @@ function loadSkills(event) {
     let s1 = document.getElementById('skill1-choice').value
     let url = `/${caller}?`
     switch (caller) {
-        case 'skill7': url += 'skill7=' + s7
-        case 'skill6': url += 'skill6=' + s6 + '&'
-        case 'skill5': url += 'skill5=' + s5 + '&'
-        case 'skill4': url += 'skill4=' + s4 + '&'
-        case 'skill3': url += 'skill3=' + s3 + '&'
-        case 'skill2': url += 'skill2=' + s2 + '&'
-        case 'skill1': url += 'skill1=' + s1 + '&'
+        case 'skill7': if (s7 == '') { url = ''; return; } url += 'skill7=' + s7
+        case 'skill6': if (s6 == '') { url = ''; return; } url += 'skill6=' + s6 + '&'
+        case 'skill5': if (s5 == '') { url = ''; return; } url += 'skill5=' + s5 + '&'
+        case 'skill4': if (s4 == '') { url = ''; return; } url += 'skill4=' + s4 + '&'
+        case 'skill3': if (s3 == '') { url = ''; return; } url += 'skill3=' + s3 + '&'
+        case 'skill2': if (s2 == '') { url = ''; return; } url += 'skill2=' + s2 + '&'
+        case 'skill1': if (s1 == '') { url = ''; return; } url += 'skill1=' + s1 + '&'
     }
     url += 'dummy=d'
     fetch(url)
