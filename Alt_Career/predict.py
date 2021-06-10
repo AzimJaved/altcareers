@@ -156,10 +156,10 @@ def predict(input_str, input_enc):
             role_ready = []
             roles_jacard = []
             data_fun = data_enc[data_enc['Functional Area'] == function]
-            role_lt = list(set(data_fun['Role Category'].values))
+            role_lt = list(set(data_fun['Role'].values))
             for r in role_lt:
-                fun_senkey.append([find_key(fun_dct,function),find_key(rolcat_dct,r),5])
-                data_role = data_fun[data_fun['Role Category'] == r]
+                fun_senkey.append([find_key(fun_dct,function),find_key(role_dct,r),5])
+                data_role = data_fun[data_fun['Role'] == r]
                 sc = ['Skill1','Skill2','Skill3','Skill4','Skill5','Skill6','Skill7']
                 sk_count = {}
                 for c in sc:
@@ -169,8 +169,8 @@ def predict(input_str, input_enc):
                 sort_dct = sorted(sk_count.items(), key = lambda ele: ele[1], reverse = True)
                 sort_skill = [x[0] for x in sort_dct]
                 #Find 7 mostt frequently occurring skills within the role in dataset
-                top_skill = sort_skill[0:15]
-                rol = find_key(rolcat_dct,r)
+                top_skill = sort_skill[0:10]
+                rol = find_key(role_dct,r)
                 #Top skills will be used to calculate jacard's index
                 #The integer codes will be used to calculate jacard's index to avoid discrepancies in accounting for similar skills
                 d = [rol] + [jacard(top_skill, input_enc)]
